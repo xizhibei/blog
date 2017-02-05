@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - 7.4.0
+
+branches:
+  only:
+    - source
+before_install:
+  - npm install -g hexo-cli
+
+install:
+  - npm install
+
+script:
+  - git submodule init
+  - git submodule update
+  - hexo generate
+
+after_success:
+  - git config --global user.name "Xu Zhipei"
+  - git config --global user.email "xuzhipei@gmail.com"
+  - sed -i''"/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
+  - hexo deploy --silent
