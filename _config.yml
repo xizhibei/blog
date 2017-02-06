@@ -4,8 +4,8 @@
 
 # Site
 title: 须臾之学
-subtitle: <还没想好>
-description: <也没想好>
+subtitle: 别瞎想，多走走，多看书
+description:
 author: xizhibei
 language: zh-CN
 timezone: Asia/Shanghai
@@ -87,3 +87,5 @@ deploy:
   type: git
   repo: git@github.com:xizhibei/xizhibei.github.io
   branch: master
+  name: Xu Zhipei
+  email: xuzhipei@gmail.com

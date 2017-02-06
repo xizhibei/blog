@@ -16,9 +16,6 @@ script:
   - git submodule init
   - git submodule update
   - hexo generate
-
-after_success:
-  - git config --global user.name "Xu Zhipei"
-  - git config --global user.email "xuzhipei@gmail.com"
-  - sed -i'' "/^ *repo/s~git@github\.com~https://${GH_TOKEN}@github.com~" _config.yml
+  - sed -i'' "/^ *repo/s~git@github\.com:~https://${GH_TOKEN}@github.com/~" _config.yml
   - hexo deploy --silent
+
