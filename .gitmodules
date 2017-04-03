@@ -1,3 +1,4 @@
 [submodule "themes/maupassant"]
 	path = themes/maupassant
 	url = https://github.com/tufu9441/maupassant-hexo
+    branch = master
