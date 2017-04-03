@@ -1,11 +1,11 @@
 language: node_js
 
 node_js:
-  - 7.4.0
+  - "7"
 
 branches:
   only:
-    - source
+    - master 
 before_install:
   - npm install -g hexo-cli
 
