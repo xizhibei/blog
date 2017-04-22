@@ -1,6 +1,6 @@
 # Blog
 
-博客中文章由 github issues 中的文章生成，并发布至 github pages
+博客中文章由 [github-issues-to-blog](https://github.com/xizhibei/github-issues-to-hexo) 获取 本项目 Github issues 中的文章生成，并发布至 github pages
 
 
 ### LICENSE
