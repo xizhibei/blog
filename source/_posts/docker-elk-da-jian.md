@@ -1,7 +1,7 @@
 ---
 title: Docker ELK 搭建
 date: 2016-04-22 23:53:18
-tags: [docker,ELK]
+tags: [Docker,ELK]
 author: xizhibei
 ---
 记得上次说到的 #1 中提到，需要搭建 ELK 来实现数据需求，其实还有另一个需求：日志系统。

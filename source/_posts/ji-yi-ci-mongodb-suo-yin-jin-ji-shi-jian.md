@@ -1,7 +1,7 @@
 ---
 title: 记一次 mongodb 索引紧急事件
 date: 2016-05-28 22:08:25
-tags: [mongodb]
+tags: [MongoDB]
 author: xizhibei
 ---
 今天正在家里加班的时候（哎。。。不多说。。。），突然接到电话，mongo 出问题了，同事把某个 collection 的索引给删了，新代码上线之后，mongo 不断在重建索引，经过立马回滚代码之后，还是继续在重建索引，用 db.currentOp 来看，索引一到 99% 就重建，也就是重新开始建立索引。

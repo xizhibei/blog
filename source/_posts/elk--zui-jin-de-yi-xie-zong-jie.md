@@ -24,7 +24,7 @@ author: xizhibei
 - 可用来分析用户行为，作为个性推荐的基础数据；
 - 可用来反爬虫，平台大了之后，总会有爬虫来爬你数据的，遇到恶意爬虫，甚至会造成服务器的不稳定，也是造成损失的因素；
 
-###ELK 之外的一些工具
+### ELK 之外的一些工具
 #### [Curator](https://www.elastic.co/guide/en/elasticsearch/client/curator/current/index.html)
 
 这个工具是用来运维的，包括删除老的数据，备份数据等等，可能是因为配置太复杂了，命令行确实太复杂，所以 Curator 提供了基于 yml 格式的配置文件来执行相关操作。

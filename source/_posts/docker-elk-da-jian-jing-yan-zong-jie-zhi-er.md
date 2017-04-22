@@ -1,7 +1,7 @@
 ---
 title: Docker ELK 搭建经验总结之二
 date: 2016-05-12 11:09:39
-tags: [docker,ELK]
+tags: [Docker,ELK]
 author: xizhibei
 ---
 运维了这么些日子的 ELK，解决了些问题，总结如下：

@@ -1,7 +1,7 @@
 ---
 title: 管理后台最佳伴侣之 NgAdmin
 date: 2016-04-28 22:40:04
-tags: [angular]
+tags: [Angular]
 author: xizhibei
 ---
 这几天为了给系统新做个后台，到处找开源项目，真给我找到了，https://github.com/marmelab/ng-admin
