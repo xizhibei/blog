@@ -1,7 +1,7 @@
 ---
 title: CI 系统搭建
 date: 2016-08-22 23:06:16
-tags: [DevOps]
+tags: [DevOps,Gitlab]
 author: xizhibei
 ---
 不知道，你有没有遇到类似的情况：
