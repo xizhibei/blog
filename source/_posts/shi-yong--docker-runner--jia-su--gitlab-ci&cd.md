@@ -1,5 +1,5 @@
 ---
-title: 使用 docker runner 加速 gitlab CI&amp;CD
+title: 使用 docker runner 加速 gitlab CI&CD
 date: 2017-05-29 16:47:48
 tags: [Docker,Gitlab]
 author: xizhibei

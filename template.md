@@ -1,5 +1,5 @@
 ---
-title: {{ post.title }}
+title: {{ &post.title }}
 date: {{ date }}
 tags: [{{ tags }}]
 author: {{ post.user.login }}
