@@ -1,7 +1,7 @@
 ---
 title: 记一次类微博 API 重构
 date: 2016-10-15 14:21:44
-tags: [MongoDB]
+tags: [MongoDB, 重构]
 author: xizhibei
 ---
 最近看 APM 上面的 API 响应，发现有个 API 在挑事，平均响应时长 4s，已经到了不可忍受的地步。
