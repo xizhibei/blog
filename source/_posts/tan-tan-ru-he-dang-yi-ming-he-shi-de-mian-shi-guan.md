@@ -1,7 +1,7 @@
 ---
 title: 谈谈如何当一名合适的面试官
 date: 2017-01-09 22:19:25
-tags: []
+tags: [工作方法]
 author: xizhibei
 ---
 ### 缘起
