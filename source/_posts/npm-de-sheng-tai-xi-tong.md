@@ -21,3 +21,7 @@ nodejs 这些年来的发展迅猛，一个重要的条件就是 npm，npm 这�
 
 ***
 原链接: https://github.com/xizhibei/blog/issues/19
+
+![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）")
+
+本文采用 [署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。

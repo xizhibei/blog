@@ -76,3 +76,7 @@ Mongo connector 配置文件可以参考如下：
 
 ***
 原链接: https://github.com/xizhibei/blog/issues/1
+
+![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）")
+
+本文采用 [署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。

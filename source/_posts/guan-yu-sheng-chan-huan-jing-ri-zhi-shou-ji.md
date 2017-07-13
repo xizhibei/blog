@@ -35,3 +35,7 @@ TCP 的话，如果日志集群足够稳定可以考虑，几乎不会丢数据�
 
 ***
 原链接: https://github.com/xizhibei/blog/issues/24
+
+![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）")
+
+本文采用 [署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。
