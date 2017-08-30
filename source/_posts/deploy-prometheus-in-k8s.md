@@ -47,7 +47,7 @@ k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cA
 - pod
 - endpoints
 
-由于篇幅所限，这里只是简单介绍下其中的 node 角色：
+由于篇幅所限，这里只是简单介绍下其中的 node 还有 pod 角色：
 
 ```yml
 - job_name: 'kubernetes-nodes'
@@ -74,6 +74,43 @@ k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cA
     regex: (.+)
     target_label: __metrics_path__
     replacement: /api/v1/nodes/${1}/proxy/metrics
+```
+接下来的这个 pod 角色挺重要：
+
+```yml
+- job_name: 'kubernetes-pods'
+
+  kubernetes_sd_configs:
+  - role: pod
+
+  relabel_configs:
+  - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+    action: keep
+    regex: true
+  - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
+    action: replace
+    target_label: __metrics_path__
+    regex: (.+)
+  - source_labels: [__address__, __meta_kubernetes_pod_annotation_prometheus_io_port]
+    action: replace
+    regex: ([^:]+)(?::\d+)?;(\d+)
+    replacement: $1:$2
+    target_label: __address__
+  - action: labelmap
+    regex: __meta_kubernetes_pod_label_(.+)
+  - source_labels: [__meta_kubernetes_namespace]
+    action: replace
+    target_label: kubernetes_namespace
+  - source_labels: [__meta_kubernetes_pod_name]
+    action: replace
+    target_label: kubernetes_pod_name
+```
+在定义了这个角色之后，你只要在你部署的应用 Pod 描述中，加入以下 annotations 就能让 Prometheus 自动发现此 Pod 并采集监控数据了：
+
+```yml
+annotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "<your app port>"
 ```
 
 其它详细配置请看 [这里](https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml)。
