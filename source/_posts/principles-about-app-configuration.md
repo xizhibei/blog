@@ -1,7 +1,7 @@
 ---
 title: 应用配置的几个原则
 date: 2017-08-28 15:30:53
-tags: []
+tags: [配置]
 author: xizhibei
 ---
 <!-- en_title: principles-about-app-configuration -->

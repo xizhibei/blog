@@ -1,7 +1,7 @@
 ---
 title: 监控利器之 Prometheus
 date: 2017-08-06 17:22:21
-tags: [DevOps,Prometheus]
+tags: [DevOps,Prometheus, 监控]
 author: xizhibei
 ---
 <!-- en_title:monitoring-with-prometheus -->

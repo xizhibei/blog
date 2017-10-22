@@ -1,7 +1,7 @@
 ---
 title: 记一次 mongo 性能提升报告
 date: 2016-04-21 23:46:48
-tags: [MongoDB,Node.js]
+tags: [MongoDB,Node.js, 数据库]
 author: xizhibei
 ---
 最近的一直进行的工作包括提升 mongo 的性能，在我接手的这段时间里，在 newrelic 上的平均响应时长是 200-300ms，遇到任务堵塞还会暴涨到 600ms 左右一小段时间。

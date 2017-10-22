@@ -1,7 +1,7 @@
 ---
 title: 数据库分页最佳实践
 date: 2016-05-22 15:02:49
-tags: []
+tags: [MongoDB, 数据库]
 author: xizhibei
 ---
 #### 2016-06-22 更新：

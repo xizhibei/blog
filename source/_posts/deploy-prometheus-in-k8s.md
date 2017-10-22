@@ -1,7 +1,7 @@
 ---
 title: 在 k8s 中部署 Prometheus
 date: 2017-08-19 21:21:59
-tags: [DevOps,kubernetes,Prometheus]
+tags: [DevOps,kubernetes,Prometheus, 沟通]
 author: xizhibei
 ---
 <!-- en_title: deploy-prometheus-in-k8s -->
