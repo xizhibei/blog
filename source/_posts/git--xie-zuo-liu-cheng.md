@@ -1,7 +1,7 @@
 ---
 title: Git 协作流程
 date: 2017-02-04 16:53:45
-tags: [DevOps]
+tags: [DevOps,Gitlab]
 author: xizhibei
 ---
 ### 前言
