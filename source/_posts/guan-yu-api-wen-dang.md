@@ -3,6 +3,7 @@ title: 关于 API 文档
 date: 2016-06-02 12:58:18
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/18
 ---
 先从一次面试经历说起，记得有次面试，我问被面试者一个 API 文档的问题：
 

@@ -3,6 +3,7 @@ title: 软件开发中的完美心理
 date: 2016-05-08 23:35:28
 tags: []
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/11
 ---
 很多时候，会发现会有一种求完美的心理：
 - 这个功能实现好差，重构下吧；

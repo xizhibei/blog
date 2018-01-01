@@ -3,6 +3,7 @@ title: CI 系统搭建
 date: 2016-08-22 23:06:16
 tags: [DevOps,Gitlab]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/26
 ---
 不知道，你有没有遇到类似的情况：
 - 不重视测试，开发新功能都是手工测试

@@ -3,6 +3,7 @@ title: CentOS 7 使用 ansible 搭建 kubernetes
 date: 2017-05-06 15:48:32
 tags: [ansible,Docker,kubernetes]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/47
 ---
 一直以来，我使用的是 rancher，它提供的 k8s 集群非常棒，基于 docker 镜像安装，免去了很多的安装配置细节，如果对于 k8s 的运行原理不想太深入了解、图方便快捷或者只是想尝试功能，那么它会让你绝对满意：在界面上点击配置下就能搭建起一个集群了。
 

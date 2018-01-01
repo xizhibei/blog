@@ -3,6 +3,7 @@ title: ElastAlert：『Hi，咱服务挂了』
 date: 2017-11-19 14:37:52
 tags: [DevOps,Elasticsearch,ELK, 监控]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/62
 ---
 <!-- en_title: alerting-with-elastalert -->
 今天给大家来介绍一个报警工具，具体来说，是基于 Elasticsearch 的报警工具，假如你的日志是放在 ES 里面的，这个工具是你不错的选择。

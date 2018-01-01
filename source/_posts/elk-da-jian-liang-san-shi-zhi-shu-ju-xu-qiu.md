@@ -3,6 +3,7 @@ title: ELK 搭建两三事之数据需求
 date: 2016-04-13 21:05:37
 tags: [ELK]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/1
 ---
 不知道大家如何应对运营以及营销同事的『临时』数据需求，在公司早期的时候，没有专门的 BI 工程师，其他工程师不够，开发任务紧。于是一次两次还好，多了之后，工程师会很烦，美女妹子的话，写个脚本导出个 excel，其他随便给导出个 CSV 文件，然后没准同事用的是 Windows，用 Excel 打开直接是乱码 :joy: 
 

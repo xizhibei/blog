@@ -3,6 +3,7 @@ title: 应用配置管理实践
 date: 2017-03-04 00:09:23
 tags: [DevOps,Node.js, 配置]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/41
 ---
 自从 [上次](https://github.com/xizhibei/blog/issues/27) 简单提到应用配置管理的几种方式以来，我都在尝试不同的方式，到目前为止，仍觉得 ** 剥离单独管理 ** 加上 ** 动态配置服务器 ** 的方式最好用，接下来谈谈原因以及具体实践。
 

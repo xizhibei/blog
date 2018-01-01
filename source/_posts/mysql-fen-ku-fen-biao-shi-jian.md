@@ -3,6 +3,7 @@ title: MySQL 分库分表实践
 date: 2016-06-15 00:12:25
 tags: [MySQL,Node.js, 数据库]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/20
 ---
 这些日子为了解决业务上的挑战，想要解决 MySQL 的性能提升方案。
 

@@ -3,6 +3,7 @@ title: 进程管理器 pm2 运维小结
 date: 2016-12-18 14:13:16
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/33
 ---
 pm2 这个进程管理器是越来越好用了，最新的版本已经开始支持 docker，不过我不看好，docker 镜像内的 node 进程挂掉就应该让集群管理器去处理，简单有效，并且也准守 **Fail fast** 这个准则。
 

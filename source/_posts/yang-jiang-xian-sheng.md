@@ -3,6 +3,7 @@ title: 杨绛先生
 date: 2016-05-25 22:04:15
 tags: [读书]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/16
 ---
 今天在朋友圈刷屏了，不想跟风，干脆在这里写点东西，权当念想。
 

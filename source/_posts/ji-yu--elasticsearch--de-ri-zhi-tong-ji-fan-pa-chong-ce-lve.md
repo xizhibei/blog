@@ -3,6 +3,7 @@ title: 基于 ElasticSearch 的日志统计反爬虫策略
 date: 2017-04-22 15:14:59
 tags: [ELK]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/46
 ---
 之前在 [接口限流](https://github.com/xizhibei/blog/issues/29) 中提到过，用 rate limit 的方式可以起到反爬虫的效果，但是一旦遇到利用代理 IP 来爬你网站的时候，就会遇到问题了
 

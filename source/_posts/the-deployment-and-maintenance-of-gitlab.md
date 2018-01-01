@@ -3,6 +3,7 @@ title: Gitlab 的部署与维护
 date: 2017-11-05 14:43:13
 tags: [DevOps,Docker,Gitlab]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/61
 ---
 <!-- en_title: the-deployment-and-maintenance-of-gitlab -->
 

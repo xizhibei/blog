@@ -3,6 +3,7 @@ title: Node.js RabbitMQ 任务队列排错小记
 date: 2017-06-11 14:36:58
 tags: [Node.js,RabbitMQ, 重构]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/51
 ---
 这周五解决了挺有意思的一个 Bug。
 

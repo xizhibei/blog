@@ -3,6 +3,7 @@ title: 谈谈如何当一名合适的面试官
 date: 2017-01-09 22:19:25
 tags: [工作方法, 招聘, 面试]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/36
 ---
 ### 缘起
 今天项目负责人跟我一起面试了一个候选人，他说沟通能力不行，直接 pass，而我却不死心，因为没问清楚技术问题，于是直接叫他做个系统设计题，哎…… 直接给我转移话题，麻蛋。

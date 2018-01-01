@@ -3,6 +3,7 @@ title: 爬虫方案之 PhantomJS
 date: 2016-05-06 12:18:43
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/10
 ---
 发现 zombie.js 还是太弱了，很多地方不能满足需求，包括 request 的 HTTP 头也不合乎标准，于是硬着头去尝试下 PhantomJS。
 

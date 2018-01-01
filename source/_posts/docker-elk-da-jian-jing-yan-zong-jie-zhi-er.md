@@ -3,6 +3,7 @@ title: Docker ELK 搭建经验总结之二
 date: 2016-05-12 11:09:39
 tags: [Docker,ELK]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/12
 ---
 运维了这么些日子的 ELK，解决了些问题，总结如下：
 ### 禁止内存换出 memlock

@@ -3,6 +3,7 @@ title: Node.js 性能分析之火焰图
 date: 2017-09-09 15:35:52
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/57
 ---
 <!-- en_title:node-js-profiling-tool-flamegraph -->
 

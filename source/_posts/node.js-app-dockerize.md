@@ -3,6 +3,7 @@ title: Node.js APP dockerize
 date: 2016-05-17 22:42:24
 tags: [Docker,Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/13
 ---
 今天把做的项目直接做了 docker 化，一个是前端纯静态化的，另一个是后端 Node.js App，对于这两个项目，想用最简单的方式来使用 docker
 

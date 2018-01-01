@@ -3,6 +3,7 @@ title: 关于 pm2 的弱项
 date: 2016-04-20 12:05:19
 tags: [Docker,Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/4
 ---
 ### 部署 deploy
 

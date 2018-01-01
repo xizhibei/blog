@@ -3,6 +3,7 @@ title: 关于生产环境日志收集
 date: 2016-07-26 22:55:02
 tags: [ELK,Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/24
 ---
 日志收集的重要性不言而喻，总结下在日志方面做的一些尝试：
 #### 日志收集的选型

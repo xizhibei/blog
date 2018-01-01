@@ -3,6 +3,7 @@ title: 谈谈人才招聘
 date: 2017-12-03 14:51:35
 tags: [企业文化, 招聘, 面试]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/63
 ---
 <!-- en_title: lets-talk-about-talent-recruitment -->
 

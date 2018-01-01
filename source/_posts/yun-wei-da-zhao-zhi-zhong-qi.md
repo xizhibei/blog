@@ -3,6 +3,7 @@ title: 运维大招之重启
 date: 2016-07-18 21:12:21
 tags: [DevOps]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/23
 ---
 > 没有什么运维问题是一起重启解决不了的，如果有，那就两次。   --- 🙈 
 

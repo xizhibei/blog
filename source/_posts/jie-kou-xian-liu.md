@@ -3,6 +3,7 @@ title: 接口限流
 date: 2016-10-29 18:30:42
 tags: [Node.js,redis]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/29
 ---
 在业务安全性方面，我们常常会用到接口限流，主要是为了防止系统压力过大、保证每个用户请求的资源保持均匀以及屏蔽恶意请求。
 

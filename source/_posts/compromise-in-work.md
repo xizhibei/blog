@@ -3,6 +3,7 @@ title: 工作中的妥协
 date: 2017-09-24 00:30:13
 tags: [工作方法, 沟通]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/58
 ---
 <!-- en_title: compromise-in-work -->
 

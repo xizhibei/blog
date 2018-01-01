@@ -3,6 +3,7 @@ title: 记一次 Mongo 连接配置调优
 date: 2016-04-14 17:56:52
 tags: [MongoDB,Node.js, 数据库]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/2
 ---
 话说在我接手公司的项目后花时间去优化 API 性能的时候，在 newrelic 上面看到，大部分都是 mongo 的时间，因此很有必要花大时间去优化。
 

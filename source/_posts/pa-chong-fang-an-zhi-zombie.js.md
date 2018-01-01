@@ -3,6 +3,7 @@ title: 爬虫方案之 zombie.js
 date: 2016-05-05 14:17:38
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/9
 ---
 这几天在做爬虫的东西，腾讯的登录真能把人搞死。。。
 首先是对 http 头做了校验，一旦顺序或者大小写不对，立马报 403 错误，然后最后密码加密那块 md5 + salt + RSA + 还有自创的 TEA 加密，我完全被搞晕了。

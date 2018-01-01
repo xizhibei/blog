@@ -3,6 +3,7 @@ title: 团队内部推广之我见
 date: 2017-05-22 22:32:11
 tags: [DevOps, 工作方法]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/48
 ---
 一些经验较少的管理者或者项目经理在团队内部推广新技术、新工具的时候，往往，会遇到阻力。
 

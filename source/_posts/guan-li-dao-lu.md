@@ -3,6 +3,7 @@ title: 管理道路
 date: 2016-08-07 12:33:38
 tags: []
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/25
 ---
 很多同行都会想，当自己做到一定程度了，应该会去做技术专家，或者管理岗位。
 

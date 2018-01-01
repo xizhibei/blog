@@ -3,6 +3,7 @@ title: 如何快速生成 iTerm2 Dynamic Profile
 date: 2017-01-05 19:31:10
 tags: [ansible]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/35
 ---
 日常服务器运维中，很多情况下，我们得登录到远程，当服务器一旦多了之后，管理还是挺麻烦的。之前一直用的 **SSH Shell** 这个小工具，一直用的挺顺畅，直到看到它在不断接收文本太多之后一次又一次奔溃，终于打算放弃。
 

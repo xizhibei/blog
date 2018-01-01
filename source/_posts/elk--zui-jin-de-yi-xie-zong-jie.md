@@ -1,8 +1,9 @@
 ---
 title: ELK 最近的一些总结
 date: 2017-04-08 23:09:34
-tags: [ELK]
+tags: [ELK, 总结]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/45
 ---
 ### 不要执迷于登录服务器敲命令，而是用自动化脚本完成所有的事情
 各种博客，包括我自己，一眼望过去，全是教你一步步怎么搭建某个服务，其实这是一个 **『反模式 anti-pattern』**。

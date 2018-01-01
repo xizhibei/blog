@@ -3,6 +3,7 @@ title: npm 的生态系统
 date: 2016-06-12 23:55:51
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/19
 ---
 nodejs 这些年来的发展迅猛，一个重要的条件就是 npm，npm 这个包管理工具很强大，如果没有这个工具，很难想象没有 npm 的 nodejs 会发展到什么程度，golang 或许可以是个参照：发展到现在，一直没有一个统一并且非常规范的包管理工具。
 

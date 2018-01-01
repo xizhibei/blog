@@ -3,6 +3,7 @@ title: 关于 Redis 缓存
 date: 2016-06-22 22:09:09
 tags: [redis]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/21
 ---
 今天尝试了用 redis 的 set 作为缓存用途，恩，好疼。。。
 

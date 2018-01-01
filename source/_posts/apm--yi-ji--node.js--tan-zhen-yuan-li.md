@@ -3,6 +3,7 @@ title: APM 以及 Node.js 探针原理
 date: 2017-02-18 22:34:34
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/40
 ---
 ### 关于 APM
 

@@ -1,8 +1,9 @@
 ---
 title: 2016 年总结
 date: 2017-01-01 00:41:50
-tags: []
+tags: [总结]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/34
 ---
 在这个跨年的时刻，躺在床上，听着音乐，想着快过去的 2016，以及即将到来的 2017。
 

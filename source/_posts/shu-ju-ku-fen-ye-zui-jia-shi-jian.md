@@ -3,6 +3,7 @@ title: 数据库分页最佳实践
 date: 2016-05-22 15:02:49
 tags: [MongoDB, 数据库]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/14
 ---
 #### 2016-06-22 更新：
 

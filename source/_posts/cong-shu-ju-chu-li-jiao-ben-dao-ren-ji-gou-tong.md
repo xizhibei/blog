@@ -3,6 +3,7 @@ title: 从数据处理脚本到人际沟通
 date: 2017-07-08 15:39:54
 tags: [工作方法, 沟通]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/52
 ---
 众所周知，在工作中，我们会有很多的时间与同事去沟通，而沟通效率是一支团队凝聚力的体现以及战斗力的保障。
 

@@ -3,6 +3,7 @@ title: (译)软件开发中的速度
 date: 2017-12-23 10:39:57
 tags: [企业文化, 工作方法, 系统思考, 翻译]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/65
 ---
 <!-- en_title: speed-in-software-development -->
 

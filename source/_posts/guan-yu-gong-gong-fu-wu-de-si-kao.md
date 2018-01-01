@@ -3,6 +3,7 @@ title: 关于公共服务的思考
 date: 2016-12-07 21:12:53
 tags: []
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/32
 ---
 前几日与一同行交流，一一交流下来，发现什么叫『固步自封』，跟外界交流少了，很多东西便会搞不清楚，甚至脱离主流。
 

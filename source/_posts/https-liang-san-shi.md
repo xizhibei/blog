@@ -3,6 +3,7 @@ title: HTTPS 两三事
 date: 2016-11-13 16:54:22
 tags: []
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/30
 ---
 ### 为什么我们需要
 近来 HTTPS 越来越被大家重视，尤其是在 http2 出来之后。

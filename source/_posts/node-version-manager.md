@@ -3,6 +3,7 @@ title: Node Version Manager
 date: 2017-01-30 22:34:23
 tags: [ansible,Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/38
 ---
 ### 关于
 NVM，简单来说，就是管理 node 版本的，自从 Node.js 跟 io.js 合并之后，node 版本迭代就非常快了。然而这时候，我们可能会需要用到多个 node 版本：旧的用来兼容以前的老项目，新的用来应用到新项目；另外线上升级 node 版本的话，也需要很方便去操作。

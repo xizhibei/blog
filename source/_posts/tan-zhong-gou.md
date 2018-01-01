@@ -3,6 +3,7 @@ title: 谈重构
 date: 2016-07-09 14:53:44
 tags: [重构]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/22
 ---
 最近总能发现，很多东西，我在实践中总结出的的经验，都是别人在书中提到过的，就比如《重构》这本书，我一直认为重构不应该拿出专门的时间，而是应该在开发新功能或者修改 bug 的时候去做，作者也非常强调这种观点：
 

@@ -3,6 +3,7 @@ title: Webpack 在后端 APP 中的使用
 date: 2016-04-25 23:24:03
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/7
 ---
 一直都说，webpack 一般只作为前端项目的开发工具使用，非常方便，但是因为它太好用了，而且 react 后端渲染也需要用到，所以纯粹用到后端项目也是可以的。
 

@@ -3,6 +3,7 @@ title: 轻量级消息队列 Kue 的一些使用总结
 date: 2016-05-24 22:32:07
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/15
 ---
 最早接触 kue 是在 0.7 之前的版本，功能很少，很弱，但还是很好用的，那时候找过一些其他的消息队列，如 rabbitmq，kafka 之类的，但是都觉得太重了，跟 nodejs 的融合还是不太合适。
 

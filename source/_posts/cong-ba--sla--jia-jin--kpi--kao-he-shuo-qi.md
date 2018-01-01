@@ -3,6 +3,7 @@ title: 从把 SLA 加进 KPI 考核说起
 date: 2017-07-09 18:01:23
 tags: [企业文化, 沟通, 系统思考]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/53
 ---
 最近公司的领导开始重视服务器的稳定性了。
 

@@ -3,6 +3,7 @@ title: ELK5 升级小记
 date: 2016-12-03 15:03:08
 tags: [ELK]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/31
 ---
 早就听说 ES5 的版本了，一直没有在意，但是直到最近正式版出来之后，才有了要升级现在的 ES 集群的想法，首先便是日志集群（2.3 版本），之前一直有问题：丢日志现象很严重，尤其是 GC 导致的静止现象，然后所用占用的空间非常大。
 

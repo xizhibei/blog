@@ -3,6 +3,7 @@ title: 谈谈如何在创业公司里面工作
 date: 2017-01-21 23:43:57
 tags: [创业, 工作方法]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/37
 ---
 年关快过了，大家基本上留的留，走的走，有之前不少朋友去了创业公司，再加上最近接触了不少来面试的新人，他们不少来自于创业公司，我面试了他们之后很有感触。
 

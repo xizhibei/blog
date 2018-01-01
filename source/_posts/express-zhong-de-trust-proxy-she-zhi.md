@@ -3,6 +3,7 @@ title: express 中的 trust proxy 设置
 date: 2016-04-15 11:12:38
 tags: [Node.js]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/3
 ---
 一般来说，我们的项目都是放在反向代理后面的，比如 nginx，haproxy 之类的，这时候就会有个问题，你获取的 IP 地址可能一直是前面代理的 IP，而不是用户端的 IP，于是这时候 express 就需要设置下 trust proxy 了
 

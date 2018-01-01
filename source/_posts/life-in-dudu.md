@@ -3,6 +3,7 @@ title: 在嘟嘟的那些日子
 date: 2017-10-08 12:41:15
 tags: [创业]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/59
 ---
 <!-- en_title: life-in-dudu -->
 

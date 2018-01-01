@@ -3,6 +3,7 @@ title: 工程师与产品经理相处之道
 date: 2017-10-22 17:27:49
 tags: [企业文化, 工作方法, 沟通]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/60
 ---
 <!-- en_title: how-engineer-and-product-mgr-get-along -->
 

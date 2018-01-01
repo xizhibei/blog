@@ -3,6 +3,7 @@ title: kubernetes 中的权限管理
 date: 2017-12-17 14:31:31
 tags: [DevOps,kubernetes]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/64
 ---
 <!-- en_title: authorization-in-k8s -->
 

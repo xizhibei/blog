@@ -3,6 +3,7 @@ title: 持续交付的实践与思考
 date: 2017-03-09 16:36:48
 tags: [DevOps,Gitlab]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/42
 ---
 一直以来都在做团队里的基础性工作，直到最近，成果开始慢慢展现，尤其是上周刚看完《持续交付》这本书后，总结已经做的工作，又有了些新的感悟。
 

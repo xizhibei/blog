@@ -3,6 +3,7 @@ title: 使用 docker runner 加速 gitlab CI&CD
 date: 2017-05-29 16:47:48
 tags: [DevOps,Docker,Gitlab]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/49
 ---
 在之前的 CI&CD 实践中，我们一直使用的是 Shell runner，简单来说，就是在一台机器上配置好所有的环境，然后序列地去执行任务。
 

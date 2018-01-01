@@ -3,6 +3,7 @@ title: k8s Ingress 实践
 date: 2017-06-10 16:06:41
 tags: [kubernetes]
 author: xizhibei
+issue_link: https://github.com/xizhibei/blog/issues/50
 ---
 一般来说，我们从外部访问 k8s 里面的应用，有以下种方式：
 
