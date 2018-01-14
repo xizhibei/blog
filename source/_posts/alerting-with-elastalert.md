@@ -1,7 +1,7 @@
 ---
 title: ElastAlert：『Hi，咱服务挂了』
 date: 2017-11-19 14:37:52
-tags: [DevOps,Elasticsearch,ELK, 监控]
+tags: [DevOps,ELK,Elasticsearch, 监控]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/62
 ---

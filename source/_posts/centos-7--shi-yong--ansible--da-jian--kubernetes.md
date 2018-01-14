@@ -1,7 +1,7 @@
 ---
 title: CentOS 7 使用 ansible 搭建 kubernetes
 date: 2017-05-06 15:48:32
-tags: [ansible,Docker,kubernetes]
+tags: [Docker,ansible,kubernetes]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/47
 ---

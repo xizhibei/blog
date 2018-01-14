@@ -1,7 +1,7 @@
 ---
 title: Node Version Manager
 date: 2017-01-30 22:34:23
-tags: [ansible,Node.js]
+tags: [Node.js,ansible]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/38
 ---
