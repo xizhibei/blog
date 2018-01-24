@@ -7,9 +7,9 @@ issue_link: https://github.com/xizhibei/blog/issues/67
 ---
 <!-- en_title: automate-the-creating-flow-of-your-hexo-blog -->
 
-[从前年开始，我开始用 GitHub issues 写博客](https://github.com/xizhibei/blog/issues/34)，写到去年的时候，逐渐意识到，GitHub issues 还是有一定不足的，比如一个很关键的点：无法查看有多少人看了你的博客文章一些运营数据，所以那得使用 Google analysis 之类的分析工具。
+[从前年开始，我开始用 GitHub issues 写博客](https://github.com/xizhibei/blog/issues/34)，写到去年的时候，逐渐意识到，GitHub issues 还是有一定不足的，比如一个很关键的点：无法查看有多少人看了你的博客文章之类的运营数据，所以那得使用 Google analysis 之类的分析工具。
 
-于是，为了嵌入 Google analysis，又开始折腾博客系统，之前折腾过 Jelly 之类的，只是让我进一部发现了 [Hexo](https://hexo.io/)，一个目前被使用得非常广泛，非常流行的博客系统。
+于是，为了嵌入 Google analysis，又开始折腾博客系统，之前折腾过 Jelly 之类的，只是让我发现了 [Hexo](https://hexo.io/)，一个目前被使用得非常广泛，非常流行的博客系统。
 
 几个明显的优点：
 
@@ -68,7 +68,7 @@ github-issues-to-hexo -u username -r repo -t ./template.md
 <!-- en_title: your-english-post-name -->
 ```
 
-这个工具还会继续改进，如果有意见或者建议之类的，欢迎留言或者直接提交 issue。
+这个工具还会继续改进，如果有意见或者建议之类的，欢迎留言或者 [直接提交 issue](https://github.com/xizhibei/github-issues-to-hexo/issues)。
 
 ### 发布
 在 ** 博客源码项目 ** 中，我们使用 `hexo-deployer-git` 这个插件来将我们生成的静态网页内容全部上传至 ** 网页博客项目 **。
