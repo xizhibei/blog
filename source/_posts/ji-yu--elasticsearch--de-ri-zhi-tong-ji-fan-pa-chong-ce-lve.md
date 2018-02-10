@@ -1,7 +1,7 @@
 ---
 title: 基于 ElasticSearch 的日志统计反爬虫策略
 date: 2017-04-22 15:14:59
-tags: [ELK]
+tags: [ELK, 反爬虫]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/46
 ---

@@ -1,7 +1,7 @@
 ---
 title: 接口限流
 date: 2016-10-29 18:30:42
-tags: [Node.js,redis]
+tags: [Node.js,redis, 反爬虫]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/29
 ---
