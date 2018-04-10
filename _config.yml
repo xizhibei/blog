@@ -81,6 +81,7 @@ theme_config:
     - search
     - tag
     - recent_posts
+    - recent_comments
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
