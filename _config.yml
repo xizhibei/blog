@@ -77,6 +77,9 @@ theme_config:
     - page: archive
       directory: archives/
       icon: fa-archive
+    - page: about
+      directory: about/
+      icon: fa-user
   widgets:
     - search
     - tag
