@@ -79,7 +79,7 @@ endpoint = circuitbreaker.Hystrix(name)(endpoint)
 - https://github.com/awolden/brakes
 - https://bitbucket.org/igor_sechyn/hystrixjs
 
-试用后觉得后者设计更好，简洁易用，并且功能更多：
+试用后觉得前者 brakes 设计更好，简洁易用，并且功能更多：
 
 - Slave Circuits 可以用来创建多个共享状态的断路器，这点在调用外部接口的时候特别试用，因为往往外部主机一挂那基本就是全部接口不可用；
 - 健康检查功能，这点其实比半开放状态更适合，不需要通过放行来测试后端服务是否正常了；
