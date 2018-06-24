@@ -70,6 +70,12 @@ theme_config:
   timeline:
   disqus: xizhibei
   google_analytics: UA-91452326-1
+  shareto: true
+  wordcount: true
+  post_copyright:
+    enable: false
+    author: xizhibei
+    copyright_text: 本文采用署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）进行许可。
   menu:
     - page: home
       directory: .
