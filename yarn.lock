@@ -1505,6 +1505,12 @@ hexo-server@^0.2.0:
     opn "^4.0.0"
     serve-static "^1.10.0"
 
+hexo-tag-post-link@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/hexo-tag-post-link/-/hexo-tag-post-link-1.0.6.tgz#85ace086e8757fa6af78fd5518aefb14748dde27"
+  dependencies:
+    underscore "^1.8.3"
+
 hexo-util@^0.6.0, hexo-util@^0.6.3:
   version "0.6.3"
   resolved "http://registry.npm.taobao.org/hexo-util/download/hexo-util-0.6.3.tgz#16a2ade457bef955af0dfd22a3fe6f0a49a9137c"

@@ -74,8 +74,7 @@ WriteResult({ "nMatched" : 100, "nUpserted" : 0, "nModified" : 100 })
 另外，这样的问题，一方面依赖于人的知识储备与经验，但是另一方面，我觉得便是监控的作用所在了：** 我们能预防已知的问题，但对于未知的问题（也往往是创新所要面对的），强大的监控报警系统才是你们团队真正需要的东西。**
 
 ***
-原链接: https://github.com/xizhibei/blog/issues/81
+首发于 Github issues: https://github.com/xizhibei/blog/issues/81 ，欢迎 Star 以及 Watch
 
-![知识共享许可协议](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）")
-
-本文采用 [署名 - 非商业性使用 - 相同方式共享（BY-NC-SA）](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。
+{% post_link footer %}
+***

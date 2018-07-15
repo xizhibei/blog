@@ -9,8 +9,7 @@ date: 2018-05-11 19:13:11
 
 ### 博客管理
 
-博客用 Hexo 搭建，源码在 Github 上，由于文章用 Issues 管理，所以一般会先在 Issues 发布，然后修改几次才发布至这里，所以欢迎 [![GitHub stars](https://img.shields.io/github/stars/xizhibei/blog.svg?style=social&label=Star)](https://github.com/xizhibei/blog/issues) 以及
-[![GitHub watchers](https://img.shields.io/github/watchers/xizhibei/blog.svg?style=social&label=Watch)](https://github.com/xizhibei/blog/issues)
+博客用 Hexo 搭建，源码在 Github 上，由于文章用 Issues 管理，所以一般会先在 Issues 发布，然后修改几次才发布至这里，所以欢迎 [![](https://img.shields.io/github/stars/xizhibei/blog.svg?style=social&label=Star)](https://github.com/xizhibei/blog/issues) 以及 [![](https://img.shields.io/github/watchers/xizhibei/blog.svg?style=social&label=Watch)](https://github.com/xizhibei/blog/issues)
 
 ### Contact
 

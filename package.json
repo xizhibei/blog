@@ -23,6 +23,7 @@
     "hexo-renderer-scss": "^1.0.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
+    "hexo-tag-post-link": "^1.0.6",
     "hexo-wordcount": "^3.0.2",
     "install": "^0.8.5"
   }

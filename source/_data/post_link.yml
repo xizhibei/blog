@@ -1,0 +1,7 @@
+footer: |
+  <b>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">署名-非商业性使用-相同方式共享（BY-NC-SA）</a>进行许可</b>
+  <br/>
+  <b>作者：<a href="<%= site_url %>/about/" target="_blank"><%= site_author %></a></b>
+  <br/>
+  <b>原链接：<a href="<%= post_permalink %>" target="_blank"><%= post_permalink %></a></b>
+  <br/>
