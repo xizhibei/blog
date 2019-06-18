@@ -17,14 +17,16 @@ Kubernetes 上手一段时候，就会发现他的资源描述文件的管理是
 
 在上手 Helm 之前，有一段时间觉得这个工具不怎么好用，因为需要学挺多东西，还得以 **Chart** 的方式管理各个项目，不过一旦上手后，就会发现用它管理 k8s 上的部署还是非常方便的，功能挺强大，而且放在 Git 中管理起来也非常方便。
 
-好，下面开始讲重点，需要你有点基础，最好先去看一遍 [官方文档](https://docs.helm.sh)，因为我不会说的很仔细，会挑选点比较重要的说说，毕竟再仔细也不能比得过官方的文档。
+好，下面开始讲重点，需要你有点基础，最好先去看一遍[官方文档](https://docs.helm.sh)，因为我不会说的很仔细，会挑选点比较重要的说说，毕竟再仔细也不能比得过官方的文档。
 
 ### 基础概念
-- Helm：客户端，主要负责管理本地的 Charts、repositories 以及与服务端通信，；
-- Tiller：安装在 k8s 集群中的服务端，是实际用来管理安装在 k8s 中应用的，就是将模板与 values 合并，当然实际开发过程中，[也可以安装在 k8s 集群之外](https://docs.helm.sh/using_helm/#installing-tiller)；
-- Chart：是用来管理模板与默认 values 的项目，也可以认为是一个 package，可以发布到专门的 repository；
+
+-   Helm：客户端，主要负责管理本地的 Charts、repositories 以及与服务端通信，；
+-   Tiller：安装在 k8s 集群中的服务端，是实际用来管理安装在 k8s 中应用的，就是将模板与 values 合并，当然实际开发过程中，[也可以安装在 k8s 集群之外](https://docs.helm.sh/using_helm/#installing-tiller)；
+-   Chart：是用来管理模板与默认 values 的项目，也可以认为是一个 package，可以发布到专门的 repository；
 
 ### 安装 & 初始化
+
 ```bash
 helm init
 ```
@@ -33,23 +35,23 @@ helm init
 
 这里有三个参数需要注意下：
 
-* --client-only：也就是不安装服务端应用，这在 CI&CD 中可能需要，因为通常你已经在 k8s 集群中安装好应用了，这时只需初始化 helm 客户端即可；
-* --history-max：最大历史，当你用 helm 安装应用的时候，helm 会在所在的 namespace 中创建一份安装记录，随着更新次数增加，这份记录会越来越多；
-* --tiller-namespace：默认是 kube-system，你也可以设置为其它 namespace；
+-   \--client-only：也就是不安装服务端应用，这在 CI&CD 中可能需要，因为通常你已经在 k8s 集群中安装好应用了，这时只需初始化 helm 客户端即可；
+-   \--history-max：最大历史，当你用 helm 安装应用的时候，helm 会在所在的 namespace 中创建一份安装记录，随着更新次数增加，这份记录会越来越多；
+-   \--tiller-namespace：默认是 kube-system，你也可以设置为其它 namespace；
 
 ### Charts
+
 可以将它简单与 npm 对比下
 
-```
-npm          <====> helm
-node modules  <====> charts
-registry     <====> repository
-package.json <====> requirements.yaml
-```
+    npm          <====> helm
+    node modules  <====> charts
+    registry     <====> repository
+    package.json <====> requirements.yaml
 
 这样，是不是能快一点理解？那么，接下来就是如何开发 Chart 了，最重要的肯定是模板了。
 
 ### 模板
+
 由于是用 Golang 开发的，使用的也是 Go 的模板语法，举个简单的例子：
 
 ```yaml
@@ -63,9 +65,9 @@ data:
 
 这个模板，用到了 Release 以及 Values 这两个内置变量，因此当用 Helm 安装到 k8s 中的时候，Tiller 会将模板中的变量渲染成 k8s 可用的 yaml 文本。
 
-其它内置变量看 [这里](https://docs.helm.sh/chart_template_guide#built-in-objects)。
+其它内置变量看[这里](https://docs.helm.sh/chart_template_guide#built-in-objects)。
 
-另外，就是 values 文件了，它最大的特点就在于可以 ** 覆盖 **，举例来说，假如你运行的命令是：
+另外，就是 values 文件了，它最大的特点就在于可以**覆盖**，举例来说，假如你运行的命令是：
 
 ```bash
 helm install -n test ./mychart -f values1.yaml -f values2.yaml
@@ -75,17 +77,15 @@ helm install -n test ./mychart -f values1.yaml -f values2.yaml
 
 假如你分别在云服务商的两个可用区内，有两个类似的 k8s 集群（比如双活架构），那么，同一个应用在两边部署的时候，就可以采取如下类似的文件目录了：
 
-```
-common.yaml # zone-a 与 zone-b 共享
-zone-a/
-    front-app.yaml
-    backend-api.yaml
-    worker.yaml
-zone-b/
-    front-app.yaml
-    backend-api.yaml
-    worker.yaml
-```
+    common.yaml # zone-a 与 zone-b 共享
+    zone-a/
+        front-app.yaml
+        backend-api.yaml
+        worker.yaml
+    zone-b/
+        front-app.yaml
+        backend-api.yaml
+        worker.yaml
 
 然后，在不同的环境中，用不同的 values 文件即可，而其中 common.yaml 便可以在不同环境中共享一些 values。
 
@@ -113,9 +113,11 @@ data:
 ### [几个小技巧](https://docs.helm.sh/developing_charts/#chart-development-tips-and-tricks)
 
 #### Image pull credentials
+
 有些时候，Docker 镜像可能需要用户名与密码去 registry 拉取，那么，你就需要专门为此创建一个模板了。
 
 比如 value 是：
+
 ```yaml
 imageCredentials:
   registry: quay.io
@@ -124,16 +126,16 @@ imageCredentials:
 ```
 
 而模板就是：
-```
-{{- define "imagePullSecret" }}
-{{- printf "{\"auths\": {\"%s\": {\"auth\": \"%s\"}}}" .Values.imageCredentials.registry (printf "%s:%s" .Values.imageCredentials.username .Values.imageCredentials.password | b64enc) | b64enc }}
-{{- end }}
-```
+
+    {{- define "imagePullSecret" }}
+    {{- printf "{\"auths\": {\"%s\": {\"auth\": \"%s\"}}}" .Values.imageCredentials.registry (printf "%s:%s" .Values.imageCredentials.username .Values.imageCredentials.password | b64enc) | b64enc }}
+    {{- end }}
 
 当然，需要注意多个 Deployment 共享一个 Chart 的情况，这时候可能会出现 secrets 冲突的情况，可考虑单为此单独创建一个 Config Chart，然后作为 App Chart 的依赖。
 
 #### 配置更新后 Pod 自动重启
-利用 k8s 的 Deployment 更改后的自动更新 [1]，我们可以用来更新应用配置，简单说就是更新 Secrets 或 ConfigMaps 后，计算它的最新 hash 值，然后将这个 hash 值 patch 到相应的 Deployment 中。
+
+利用 k8s 的 Deployment 更改后的自动更新[1]，我们可以用来更新应用配置，简单说就是更新 Secrets 或 ConfigMaps 后，计算它的最新 hash 值，然后将这个 hash 值 patch 到相应的 Deployment 中。
 
 ```yaml
 kind: Deployment
@@ -148,6 +150,7 @@ spec:
 这样，假如这个配置有问题，比如造成应用崩溃了，k8s 也会认为新的 ReplicaSet 失败了，不会将流量导过去，从而不继续滚动更新，避免了了由配置更新导致的应用崩溃问题。
 
 ### P.S.
+
 这篇文章可以看看：[draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold](https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948)
 
 主要讲的是 helm 与其它工具的对比，比如 draft 可以帮你快速初始化一个对应开发语言的 helm Chart，而 ksonnet 与 Helm 非常类似，可重点看看；
@@ -155,7 +158,9 @@ spec:
 另外，我接下来还尝试把 Helm 写成一个系列，会细讲我们是如何实践这个工具的，比如应用配置管理，与 CI&CD 集成等，敬请期待。
 
 ### Ref
-1. https://stackoverflow.com/questions/37317003/restart-pods-when-configmap-updates-in-kubernetes
+
+1.  <https://stackoverflow.com/questions/37317003/restart-pods-when-configmap-updates-in-kubernetes>
+
 
 ***
 首发于 Github issues: https://github.com/xizhibei/blog/issues/89 ，欢迎 Star 以及 Watch

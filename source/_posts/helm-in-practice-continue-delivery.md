@@ -1,30 +1,32 @@
 ---
 title: Helm 实践之持续交付
 date: 2018-11-03 20:42:57
-tags: [DevOps,Docker,Gitlab,Helm,kubernetes, 总结]
+tags: [DevOps,Docker,Gitlab,Helm,kubernetes,总结]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/91
 ---
 <!-- en_title: helm-in-practice-continue-delivery -->
 
-这是 Helm 系列的第三篇，在前两篇中，我介绍了 Helm 的 [入门](https://github.com/xizhibei/blog/issues/89) 以及 [配置实践](https://github.com/xizhibei/blog/issues/90)，而今天我们来说说 Helm 持续发布的实践。
+这是 Helm 系列的第三篇，在前两篇中，我介绍了 Helm 的[入门](https://github.com/xizhibei/blog/issues/89) 以及 [配置实践](https://github.com/xizhibei/blog/issues/90)，而今天我们来说说 Helm 持续发布的实践。
 
 <!-- more -->
 
-其实继续之前可以稍稍复习下，参看我之前关于持续交付的文章 [持续交付的实践与思考](https://github.com/xizhibei/blog/issues/42)。
+其实继续之前可以稍稍复习下，参看我之前关于持续交付的文章[持续交付的实践与思考](https://github.com/xizhibei/blog/issues/42)。
 
 好了，接下来我主要以 Gitlab CI 为例来说明，需要你有一定的 Gitlab CI 基础，或者先看看这几篇文章也行：
 
-- [Gitlab 的部署与维护](https://github.com/xizhibei/blog/issues/61)
-- [CI 系统搭建](https://github.com/xizhibei/blog/issues/26)
-- [GitLab CI/CD Variables](https://docs.gitlab.com/ee/ci/variables/)
+-   [Gitlab 的部署与维护](https://github.com/xizhibei/blog/issues/61)
+-   [CI 系统搭建](https://github.com/xizhibei/blog/issues/26)
+-   [GitLab CI/CD Variables](https://docs.gitlab.com/ee/ci/variables/)
 
 ### 准备工作
 
 #### Git 项目
+
 你需要按照我在入门篇中描述的，把你所需要的这个 Chart 用 Git 管理，同时按照配置管理的做法，将 secrets values 使用 PGP 管理（用云服务提供的密钥管理其实也是类似的）。
 
 #### 部署镜像
+
 这个镜像中安装好 kubectl，helm，helm-secrets，sops 等，这样，你就不用每次都需要重新安装了。
 
 当然，你也可以直接用我的，修改下涉及到的版本号即可，而在国内可能需要翻墙，设置下 http_proxy 以及 https_proxy 即可。
@@ -67,20 +69,18 @@ $ docker push registry.example.com/your-custom-helm-image
 
 0、我们的需要部署项目的结构大致如下：
 
-```
-app/
-    ...
-deploy/
-    chart/
+    app/
         ...
-    vars/production/values.yaml
-    vars/production/secrets.yaml
-    ...
-    deploy-k8s.sh
-Dockerfile
-.sops.yaml
-.gitlab-ci.yaml
-```
+    deploy/
+        chart/
+            ...
+        vars/production/values.yaml
+        vars/production/secrets.yaml
+        ...
+        deploy-k8s.sh
+    Dockerfile
+    .sops.yaml
+    .gitlab-ci.yaml
 
 1、 导出 PGP 密钥的私钥，先确认需要导出的 key 的 ID：
 
@@ -131,10 +131,13 @@ deploy:
 5、提交，测试没问题后创建一个 tag 就可以手工点击发布了。
 
 ### P.S.
+
 最后介绍一个项目：[weaveworks/flux](https://github.com/weaveworks/flux)，既所谓的 GitOps，其实就是帮你自动化部署在 Git 中管理的 helm chart，在上面说的的实践中，我们都是需要手工去 CI&CD 中配置这个部署系统的，而这个工具可以进一步节约你的工作量（不过也需要折腾），有兴趣可以了解下。
 
 ### P.P.S
+
 Helm 系列的三篇文章写完了，算是写博客以来第一个系列，比较粗糙，也没有完整规划过，就算是个简单的总结了，总之，希望能对你有用。
+
 
 ***
 首发于 Github issues: https://github.com/xizhibei/blog/issues/91 ，欢迎 Star 以及 Watch

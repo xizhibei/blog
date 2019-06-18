@@ -1,7 +1,7 @@
 ---
 title: 在 k8s 中部署 Prometheus
 date: 2017-08-19 21:21:59
-tags: [DevOps,Prometheus,kubernetes, 沟通]
+tags: [DevOps,Prometheus,kubernetes,沟通]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/55
 ---
@@ -10,6 +10,7 @@ issue_link: https://github.com/xizhibei/blog/issues/55
 自从 [上次](https://github.com/xizhibei/blog/issues/54) 介绍了 Prometheus 之后，就想到要在 k8s 中使用了，不过，在这之前，先介绍下 k8s 的监控。
 
 ### k8s 的监控
+
 k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cAdvisor + Influxdb + Grafana，具体可以看 [这里](https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/) 。
 
 包括 k8s 自身的 HPA (Horizontal Pod Autoscaler)，默认从 Heapster 中获取数据进行自动伸缩。（顺便提一句，当你部署完 k8s 集群之后，如果从 Dashboard 中看不到监控数据，往往就是因为你没有部署 Heapster，或者网络层有问题， Dashboard 无法访问 Heapster。）
@@ -28,25 +29,27 @@ k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cA
 其实部署很简单，关键是配置，因此这里着重介绍下，如何配置。
 
 #### Relabel
+
 首先，先来了解下，什么是 [relabel_config](https://prometheus.io/docs/operating/configuration/#relabel_config)。
 
 就如字面意思而言，它的作用是 Prometheus 抓取 metrics 之前，就将对象相关的 labels 重写。下面是它几个重要的 label：
 
-- \_\_address\_\_：默认为 host:port，也是之后抓取之后 instance 的值；
-- \_\_scheme\_\_：http or https ？；
-- \_\_metrics\_path\_\_：就是 metrics path，默认为 **/metrics**；
-- \_\_param\_${name}：用来作为 URL parameter，比如 **http://.../metrics?name=value**；
-- \_\_meta\_：这个开头的配置都是 SD 相关的配置；
+-   \_\_address\_\_：默认为 host:port，也是之后抓取之后 instance 的值；
+-   \_\_scheme\_\_：http or https ？；
+-   \_\_metrics_path\_\_：就是 metrics path，默认为 **/metrics**；
+-   \_\_param\_${name}：用来作为 URL parameter，比如 **<http://.../metrics?name=value>**；
+-   \_\_meta\_：这个开头的配置都是 SD 相关的配置；
 
 #### Kubernetes SD
+
 其次，上次提到，我们可以用到 Service Discovery 这个功能，其中就包含 [Kubernetes SD](https://prometheus.io/docs/operating/configuration/#<kubernetes_sd_config>)。
 
 它包含四种角色：
 
-- node
-- service
-- pod
-- endpoints
+-   node
+-   service
+-   pod
+-   endpoints
 
 由于篇幅所限，这里只是简单介绍下其中的 node 还有 pod 角色：
 
@@ -76,6 +79,7 @@ k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cA
     target_label: __metrics_path__
     replacement: /api/v1/nodes/${1}/proxy/metrics
 ```
+
 接下来的这个 pod 角色挺重要：
 
 ```yml
@@ -106,6 +110,7 @@ k8s 默认以及推荐的监控体系是它自己的一套东西：Heapster + cA
     action: replace
     target_label: kubernetes_pod_name
 ```
+
 在定义了这个角色之后，你只要在你部署的应用 Pod 描述中，加入以下 annotations 就能让 Prometheus 自动发现此 Pod 并采集监控数据了：
 
 ```yml
@@ -117,6 +122,7 @@ annotations:
 其它详细配置请看 [这里](https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml)。
 
 ### Kubernetes Deployment
+
 最后，部署 Prometheus，需要注意的是，我们已经在 k8s 之外单独部署了一套，为了统一处理，在这里是打算作为中转的。
 
 ```yml
@@ -179,6 +185,7 @@ spec:
 ```
 
 #### Prometheus Federate
+
 而在我们外部单独的 Prometheus 中，需要配置 [Federate](https://prometheus.io/docs/operating/federation/)，将 k8s 中 Prometheus 采集的 metrics 全部同步出来。
 
 ```yml
@@ -198,7 +205,6 @@ spec:
         - '<k8s-node2>:30090'
         - '<k8s-node3>:30090'
 ```
-
 
 
 ***

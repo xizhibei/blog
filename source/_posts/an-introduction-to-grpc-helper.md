@@ -16,23 +16,24 @@ issue_link: https://github.com/xizhibei/blog/issues/86
 
 因此我想了想，除了最重要的 Promise API 功能（毕竟 callback 的风格早就应该被淘汰了），我想要的功能主要有：
 
-1. ** 服务发现 **：比如支持 DNS 服务发现，其它的可以是 consul etcd 等；
-2. ** 客户端负载均衡 **：支持 Round roubin 负载均衡；
-3. ** 健康检查 **：支持上游的健康检查，剔除不健康的后端以及重新加入健康的后端
-4. ** 断路器 **：一旦上游出错了，能够及时断开；
-5. ** 监控指标 **：能够提供监控指标，方便发现以及处理问题；
+1.  **服务发现**：比如支持 DNS 服务发现，其它的可以是 consul etcd 等；
+2.  **客户端负载均衡**：支持 Round roubin 负载均衡；
+3.  **健康检查**：支持上游的健康检查，剔除不健康的后端以及重新加入健康的后端
+4.  **断路器**：一旦上游出错了，能够及时断开；
+5.  **监控指标**：能够提供监控指标，方便发现以及处理问题；
 
-好了，相信你也应该看出来了，我想要的无非就是 ** 负载均衡加上 Promise API**，因为上面的几点都是一个负载均衡器应该做的事情。
+好了，相信你也应该看出来了，我想要的无非就是**负载均衡加上 Promise API**，因为上面的几点都是一个负载均衡器应该做的事情。
 
 实现的话，还是用 TypeScript，不明白的可以看看我之前的介绍：[使用 TypeScript 开发 NPM 模块](https://github.com/xizhibei/blog/issues/68)。
 
 ### Promise API
+
 于是首先是需要提供一个非常简便的 Promise API 接口，我们都知道 grpc 以客户端以及服务端是否使用了流分成了四种风格的接口：
 
-- Unary：客户端 & 服务端没有流；
-- Client stream：客户端有流，服务端没有流；
-- Server stream：客户端没有流，服务端有流；
-- Bidi stream：客户端 & 服务端都有流；
+-   Unary：客户端 & 服务端没有流；
+-   Client stream：客户端有流，服务端没有流；
+-   Server stream：客户端没有流，服务端有流；
+-   Bidi stream：客户端 & 服务端都有流；
 
 而在这四种接口中，只有 Unary 以及 Client stream 有返回值 callback 风格的接口，这从设计上也符合一致性的风格，只是我们不喜欢用而已。
 
@@ -73,7 +74,7 @@ const { message, status, metadata, peer } = await client.SayHello({name: 'foo'})
 
 这样也就非常简单明了了，实现起来也不难，我同时提供了 `resolveFullResponse` 参数，默认为 false，这样，大部分情况下，如果不需要 status 之类的返回值，只需要第一种设计，那基本上也不需要改动参数。 
 
-同时，我还参考了 @murgatroid99 在 [官方讨论](https://github.com/grpc/grpc-node/issues/54) 中的设计，将 Client stream 接口也改成了 Promise 风格的接口：
+同时，我还参考了 @murgatroid99 在[官方讨论](https://github.com/grpc/grpc-node/issues/54)中的设计，将 Client stream 接口也改成了 Promise 风格的接口：
 
 ```js
 const stream = new stream.PassThrough({ objectMode: true });
@@ -89,11 +90,12 @@ const result = await promise; // { message: 'hello foo1,foo2,foo3' }
 ```
 
 ### 负载均衡
+
 应该说这是一个现代的负载均衡器应该做的事情，我参考了 [grpc-go](https://github.com/grpc/grpc-go) 的设计，引入了 Resolver Watcher 以及 Balancer 几个抽象接口。
 
-- Resolver：目前主要是 static 以及 dns，static 即直接解析服务端的地址，而 dns 则是利用 Node.js 的 dns.resolveSrv 解析 Srv 记录（具体使用场景可参考[这里](https://github.com/xizhibei/blog/issues/84)）；
-- Watcher：即实时 watch 服务发现，及时更新服务端的记录；
-- Balancer：即实现 Round robin 负载均衡算法，挑选可用的服务端；
+-   Resolver：目前主要是 static 以及 dns，static 即直接解析服务端的地址，而 dns 则是利用 Node.js 的 dns.resolveSrv 解析 Srv 记录（具体使用场景可参考[这里](https://github.com/xizhibei/blog/issues/84)）；
+-   Watcher：即实时 watch 服务发现，及时更新服务端的记录；
+-   Balancer：即实现 Round robin 负载均衡算法，挑选可用的服务端；
 
 而在[上次的文章中](https://github.com/xizhibei/blog/issues/84)，我也提到了 grpc-node 中，现在还没有实现负载均衡能力，而且它目前的实现，还不能很方便的提供给我们很方便定制这个功能的接口，于是，目前能做的便是直接给每个服务端生成一个 client，然后在这个基础之上进行负载均衡的实现。
 
@@ -135,6 +137,7 @@ helper.SayHello()
 其它的负载均衡功能限于篇幅不再详细介绍，可参考源码实现。
 
 ### 其它功能
+
 主要是监控指标以及全局 deadline，我直接使用了 grpc-node 提供 interceptors，拿监控指标举例：
 
 ```js
@@ -186,6 +189,7 @@ const helper = new GRPCHelper({
 ```
 
 ### 总结
+
 好了，总体来说，这个工具的实现不复杂，但是需要花费挺多精力去具体实现，同时我也觉得如果不在这里给这个工具好好宣传一下的话，很容易就会变成只有我自己使用的一个工具，一些问题也不会发现，工具本身也无法进一步发展。
 
 同时，我也相信，我这个工具最终会被官方的功能所取代，但是如果官方能够采用或者参考我的设计的话，那也是不错的结果。
@@ -193,6 +197,7 @@ const helper = new GRPCHelper({
 另外，工具现在正在我们的测试环境中使用，正式环境也有部分在使用，所以各位如果有机会也不妨试试。
 
 最后，给个 [Star](https://github.com/xizhibei/grpc-helper) 也是极好的 :P 。
+
 
 ***
 首发于 Github issues: https://github.com/xizhibei/blog/issues/86 ，欢迎 Star 以及 Watch
