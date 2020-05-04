@@ -1,7 +1,7 @@
 ---
 title: Golang 中的测试
 date: 2018-12-31 13:01:56
-tags: [Golang]
+tags: [Golang,测试]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/95
 ---
