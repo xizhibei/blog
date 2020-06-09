@@ -1,7 +1,7 @@
 ---
 title: 【CMake 系列】（五）安装、打包与导出
 date: 2020-04-20 18:43:22
-tags: [CMake,C|C++]
+tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/137
 ---

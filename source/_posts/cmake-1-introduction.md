@@ -1,7 +1,7 @@
 ---
 title: 【CMake系列】（一）入门
 date: 2020-03-09 20:09:15
-tags: [CMake,C|C++]
+tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/133
 ---
