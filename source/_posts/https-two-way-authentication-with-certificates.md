@@ -65,7 +65,16 @@ SSL 握手阶段可以参考如下，此图盗自 [Ssl handshake with two way au
 1.  混淆客户端证书，让破解者无法通过简单的 `strings` 命令, 或者解压你的安装包就能获取到明文证书。另外，你也可以直接用 pkcs12 格式的证书，记得更换一个更强的密码；
 2.  即使证书泄露，你还可以在服务器配置一个撤销证书列表，这样，被泄露的证书就没有权限来访问了；
 
-### 如何实现<sup>[2]</sup>
+#### 为何我对于客户端证书如此推崇？
+
+我的理由主要有两点：
+
+1.  有着广泛的支持，操作系统本身以及各种反向代理 Nginx、Apache，网络工具 curl、wget 以及各种语言等；
+2.  加密通信是应该由通信协议本身来解决的问题，它应该与具体传输的内容解耦，所以它还能支持其它协议，比如 MQTT、AMQP 等等；
+
+大多数没有选择客户端证书的，我认为是因为对它不够了解，或者说它的强大显得过于简单，导致很多人都没有什么安全感，尤其是领导没有什么安全感，但是请大家不妨想想现在有谁能够简单破解 HTTPS 请求内容呢？基于 RSA 加密的通信，是我们现代互联网的安全基础，没有谁能够轻易破解。
+
+### 如何实现<sup>[2]、[3]</sup>
 
 目前大部分方案都是拿 OpenSSL + Nginx 来举例的（随便搜索都是一大堆），那我就把 OpenSSL 换成更简单好用的 [CFSSL](https://github.com/cloudflare/cfssl) 。
 
@@ -245,10 +254,13 @@ openssl pkcs12 -export -clcerts \
 
 1.  [Transport Layer Security][1]
 2.  [Generate self-signed certificates][2]
+3.  [kubernetes-the-hard-way][3]
 
 [1]: https://en.wikipedia.org/wiki/Transport_Layer_Security#Client-authenticated_TLS_handshake
 
 [2]: https://coreos.com/os/docs/latest/generate-self-signed-certificates.html
+
+[3]: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md
 
 
 ***
