@@ -1,7 +1,7 @@
 ---
 title: Docker multi-stage builds
 date: 2019-11-04 18:57:04
-tags: [DevOps,Docker]
+tags: [Docker,DevOps]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/124
 ---

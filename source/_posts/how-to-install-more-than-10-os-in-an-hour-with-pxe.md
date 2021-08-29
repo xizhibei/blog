@@ -1,7 +1,7 @@
 ---
 title: 如何用 PXE 在一小时内安装完 10 台以上的操作系统
 date: 2019-10-21 21:28:11
-tags: [Ubuntu,工作方法,总结]
+tags: [工作方法,总结,Ubuntu]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/123
 ---

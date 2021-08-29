@@ -1,7 +1,7 @@
 ---
 title: 如何给 Git 大项目瘦身
 date: 2020-02-23 23:13:09
-tags: [Git,工作方法]
+tags: [工作方法,Git]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/132
 ---

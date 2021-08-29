@@ -1,7 +1,7 @@
 ---
 title: Go kit：Golang 微服务的瑞士军刀
 date: 2018-05-27 23:21:27
-tags: [Golang,微服务,架构]
+tags: [微服务,Golang,架构]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/78
 ---

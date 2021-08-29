@@ -1,7 +1,7 @@
 ---
 title: 不拘一格的网飞
 date: 2021-03-28 15:56:14
-tags: [企业文化,职场,读书,鉴书]
+tags: [读书,企业文化,职场,鉴书]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/166
 ---

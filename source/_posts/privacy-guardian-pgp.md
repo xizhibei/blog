@@ -1,7 +1,7 @@
 ---
 title: 隐私守卫者 PGP
 date: 2020-08-12 15:16:01
-tags: [PGP,安全,工具]
+tags: [安全,PGP,工具]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/147
 ---

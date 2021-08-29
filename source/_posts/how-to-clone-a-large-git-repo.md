@@ -1,7 +1,7 @@
 ---
 title: 如何克隆一个大 Git 项目
 date: 2020-02-10 12:38:14
-tags: [Git,基础知识,工作方法]
+tags: [工作方法,基础知识,Git]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/131
 ---

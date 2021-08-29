@@ -1,7 +1,7 @@
 ---
 title: 如何优雅重加载 Web 应用
 date: 2019-06-03 15:37:42
-tags: [DevOps,Golang,Node.js]
+tags: [Node.js,DevOps,Golang]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/108
 ---

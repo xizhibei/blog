@@ -1,7 +1,7 @@
 ---
 title: 网页视频播放：协议篇
 date: 2019-12-02 17:38:23
-tags: [业务,总结,视频直播]
+tags: [总结,业务,视频直播]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/126
 ---

@@ -1,7 +1,7 @@
 ---
 title: 面试大招之系统设计
 date: 2019-07-29 15:57:56
-tags: [招聘,系统设计,面试]
+tags: [面试,招聘,系统设计]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/116
 ---

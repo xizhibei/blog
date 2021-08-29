@@ -1,7 +1,7 @@
 ---
 title: RPATH 简介以及 CMake 中的处理
 date: 2021-02-12 16:37:45
-tags: [C/C++,CMake,Linux]
+tags: [Linux,C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/161
 ---

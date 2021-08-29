@@ -1,7 +1,7 @@
 ---
 title: 《大江东去》读后感
 date: 2019-02-11 12:42:59
-tags: [鉴书]
+tags: [读书,鉴书]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/99
 ---

@@ -1,7 +1,7 @@
 ---
 title: Golang 中的异步任务队列
 date: 2019-07-15 15:12:00
-tags: [Golang,RabbitMQ,架构]
+tags: [RabbitMQ,Golang,架构]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/115
 ---

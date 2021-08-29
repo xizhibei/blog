@@ -1,7 +1,7 @@
 ---
 title: 项目质量的前哨部队：Git hooks
 date: 2019-08-12 15:35:44
-tags: [DevOps,Git,基础知识,工作方法]
+tags: [DevOps,工作方法,基础知识,Git]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/117
 ---

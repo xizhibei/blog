@@ -1,7 +1,7 @@
 ---
 title: 如何实现一个安全的 SaaS/PaaS 服务
 date: 2019-09-23 21:45:38
-tags: [Golang,业务,安全,总结,系统设计]
+tags: [总结,安全,业务,Golang,系统设计]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/121
 ---

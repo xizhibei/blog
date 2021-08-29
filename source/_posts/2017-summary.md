@@ -1,7 +1,7 @@
 ---
 title: 2017年总结
 date: 2017-12-31 16:45:26
-tags: [年度总结,总结]
+tags: [总结,年度总结]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/66
 ---

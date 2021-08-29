@@ -1,7 +1,7 @@
 ---
 title: 为什么你需要理解用户需求
 date: 2020-07-14 19:24:47
-tags: [业务,工作方法]
+tags: [工作方法,业务]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/143
 ---

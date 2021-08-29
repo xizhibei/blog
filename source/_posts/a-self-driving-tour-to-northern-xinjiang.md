@@ -1,7 +1,7 @@
 ---
 title: 北疆（新疆）自驾游记
 date: 2020-10-19 12:49:16
-tags: [旅行,生活]
+tags: [生活,旅行]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/151
 ---

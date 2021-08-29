@@ -1,7 +1,7 @@
 ---
 title: 工程师的傲骄
 date: 2021-03-22 20:52:52
-tags: [创业,工作方法,总结]
+tags: [工作方法,创业,总结]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/165
 ---
