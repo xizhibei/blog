@@ -47,7 +47,7 @@ jobs:
       # 安装依赖
       - name: Install dependencies
         run: |
-          yarn install --prefer-offline --frozen-lockfile
+          yarn install --prefer-offline --frozen-lockfile --ignore-engines
       
       - name: Set up environment
         env:
