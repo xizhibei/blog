@@ -61,8 +61,7 @@ jobs:
 
       - name: npm install, build
         run: |
-          npm install
           git submodule init
           git submodule update
-          hexo generate
-          hexo deploy --silent
+          npx hexo generate
+          npx hexo deploy --silent
