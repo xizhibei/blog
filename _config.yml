@@ -70,7 +70,7 @@ theme_config:
   links:
   timeline:
   disqus: xizhibei
-  google_analytics: UA-91452326-1
+  google_analytics: G-LHXP51259L
   shareto: true
   wordcount: true
   post_copyright:
@@ -92,6 +92,10 @@ theme_config:
     - tag
     - recent_posts
     - recent_comments
+  info:
+    # avatar: /img/avatar.png
+    discription: To be a better man.
+    outlinkitem:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
