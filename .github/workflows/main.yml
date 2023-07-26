@@ -96,11 +96,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: github-pages
-          path: github-pages.tar
       - name: Extract files
         run: |
           mkdir public
-          tar -xvf github-pages.tar -C public
+          tar -xvf artifact.tar -C public
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
