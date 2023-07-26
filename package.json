@@ -16,7 +16,6 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-jade": "0.5.0",
     "hexo-renderer-marked": "^6.1.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-sass-next": "^0.1.3",
