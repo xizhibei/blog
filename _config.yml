@@ -5,7 +5,7 @@
 # Site
 title: 须臾之学
 subtitle: 别瞎想，多走走，多看书
-description: 技术分享 | Node.js | kubernetes | ansible | Docker | DevOps | 思维与认知
+description: 技术分享 | 思维认知 | 总结反省
 author: 习之北 (@xizhibei)
 language: zh-CN
 timezone: Asia/Shanghai
@@ -69,10 +69,14 @@ theme: maupassant
 theme_config:
   links:
   timeline:
-  disqus: xizhibei
   google_analytics: G-LHXP51259L
   shareto: true
   wordcount: true
+  disqus:
+    enable: true
+    shortname: xizhibei
+    # api: https://disqus.skk.moe/disqus/
+    apikey: W3BZ8Csb0lPl6t0x57zcSdRPFaXUJts1IHXVI3hPpfedAe2odUXHvJYnINf7mLkS
   post_copyright:
     enable: false
     author: xizhibei
@@ -96,12 +100,3 @@ theme_config:
     # avatar: /img/avatar.png
     discription: To be a better man.
     outlinkitem:
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:xizhibei/xizhibei.github.io
-  branch: master
-  name: Xu Zhipei
-  email: xuzhipei@gmail.com

@@ -19,7 +19,6 @@
     "hexo-renderer-marked": "^6.1.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-sass-next": "^0.1.3",
-    "hexo-renderer-scss": "^1.0.2",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-post-link": "^1.0.6",
