@@ -5,7 +5,7 @@ tags: [MQTT]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/181
 ---
-<!-- en_title: mqtt-sub-pub-and-topics --->
+<!-- en_title: mqtt-3-sub-pub-and-topics --->
 
 接着上次的简介（这个博主真会拖更 :P），我们来说说 MQTT 的一些基本概念。
 
