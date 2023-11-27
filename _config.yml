@@ -100,3 +100,11 @@ theme_config:
     # avatar: /img/avatar.png
     discription: To be a better man.
     outlinkitem:
+  donate:
+    enable: true ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+    github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+    alipay_qr: /media/misc/alipayqr.jpg ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+    wechat_qr: /media/misc/wechatqr.jpg ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+    btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+    btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
+    paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
