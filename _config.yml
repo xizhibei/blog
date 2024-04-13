@@ -7,7 +7,9 @@ title: 须臾之学
 subtitle: 别瞎想，多走走，多看书
 description: 技术分享 | 思维认知 | 总结反省
 author: 习之北 (@xizhibei)
-language: zh-CN
+language:
+  - zh-CN
+  - en
 timezone: Asia/Shanghai
 
 # URL
