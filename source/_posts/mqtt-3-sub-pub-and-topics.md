@@ -65,7 +65,11 @@ MQTT 里面的 Topic 很容易理解，可以把它与 HTTP 协议或者 Linux �
 
 下面我们以 Go 为例来说明消息发布与接收。
 
-目前最常用的库是 [paho.mqtt.golang](github.com/eclipse/paho.mqtt.golang)，我们可以直接使用 `go get github.com/eclipse/paho.mqtt.golang` 来获取。
+目前最常用的库是 [paho.mqtt.golang](https://github.com/eclipse/paho.mqtt.golang)，我们可以直接使用以下方式来获取。
+
+```bash
+go get github.com/eclipse/paho.mqtt.golang
+```
 
 作为 MQTT 客户端，第一件要做的时间，便是建立连接。
 
