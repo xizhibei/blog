@@ -65,6 +65,8 @@ jobs:
           git submodule init
           git submodule update
           npx hexo generate
+          cd public
+          ln -sf zh-cn/* .
 
         # npx hexo deploy --silent
 
