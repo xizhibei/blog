@@ -23,6 +23,10 @@ date: 2018-05-11 19:13:11
 
 ### 项目
 
+#### Golang
+
+- [Go reverse RPC](https://github.com/xizhibei/go-reverse-rpc): 基于 MQTT 等长连接协议，支持云端实时调用设备端功能的 RPC 框架；
+
 #### Node.js
 
 - [gRPC helper](https://github.com/xizhibei/grpc-helper): grpc-node 的进一步封装，支持 Promise 以及 async/await，另有负载均衡，DNS 服务发现等；
