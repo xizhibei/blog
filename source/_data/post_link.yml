@@ -5,3 +5,11 @@ footer: |
   <br/>
   <b>原链接：<a href="<%= post_permalink %>" target="_blank"><%= post_permalink %></a></b>
   <br/>
+
+footer_en: |
+  <b>This article is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA</a></b>
+  <br/>
+  <b>Author: <a href="<%= site_url %>/about/" target="_blank"><%= site_author %></a></b>
+  <br/>
+  <b>Original link: <a href="<%= post_permalink %>" target="_blank"><%= post_permalink %></a></b>
+  <br/>

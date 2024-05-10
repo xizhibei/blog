@@ -130,3 +130,7 @@ PingTimeout             time.Duration
 - [What are Retained Messages in MQTT? – MQTT Essentials: Part 8](https://www.hivemq.com/blog/mqtt-essentials-part-8-retained-messages/)
 - [What is MQTT Last Will and Testament (LWT)? – MQTT Essentials: Part 9](https://www.hivemq.com/blog/mqtt-essentials-part-9-last-will-and-testament/)
 - [What Is MQTT Keep Alive and Client Take-Over? – MQTT Essentials Part 10](https://www.hivemq.com/blog/mqtt-essentials-part-10-alive-client-take-over/)
+
+***
+{% post_link footer %}
+***
