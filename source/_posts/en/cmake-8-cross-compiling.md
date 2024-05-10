@@ -139,5 +139,5 @@ In my view, the method of cross-compiling provided by CMake is very simple and e
 ***
 First published on GitHub issues: https://github.com/xizhibei/blog/issues/141, welcome to Star and Watch
 
-{% post_link footer %}
+{% post_link footer_en %}
 ***

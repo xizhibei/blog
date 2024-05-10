@@ -109,5 +109,5 @@ Additionally, compared to my earlier solution, it still doesn't save compilation
 ***
 First published on Github issues: https://github.com/xizhibei/blog/issues/135, feel free to Star and Watch
 
-{% post_link footer %}
+{% post_link footer_en %}
 ***

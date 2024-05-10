@@ -200,5 +200,5 @@ Above, I've briefly listed what our team commonly uses, also chosen by me after 
 ***
 First published on GitHub issues: https://github.com/xizhibei/blog/issues/140, welcome to Star and Watch
 
-{% post_link footer %}
+{% post_link footer_en %}
 ***

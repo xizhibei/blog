@@ -106,5 +106,5 @@ Regarding GoogleTest itself, it's a matter of reading the documentation to write
 ***
 First published on Github issues: https://github.com/xizhibei/blog/issues/136, feel free to Star and Watch
 
-{% post_link footer %}
+{% post_link footer_en %}
 ***
