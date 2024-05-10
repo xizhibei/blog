@@ -1,6 +1,7 @@
 ---
 title: CMake 动态链接库绝对路径问题
 date: 2021-02-12 16:48:46
+categories: [CMake]
 tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/162

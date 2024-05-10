@@ -1,6 +1,7 @@
 ---
 title: (MQTT Series) Part 3 - Publishing Subscribing and Topics
 date: 2021-12-12 00:09:19
+categories: [MQTT]
 tags: [MQTT]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/181

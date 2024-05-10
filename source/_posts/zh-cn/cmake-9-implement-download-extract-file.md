@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（九）实战之如何下载依赖
 date: 2020-06-30 19:35:08
+categories: [CMake]
 tags: [CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/142

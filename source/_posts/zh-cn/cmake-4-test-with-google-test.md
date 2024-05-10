@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（四）用 GoogleTest 测试
 date: 2020-04-05 23:37:59
+categories: [CMake]
 tags: [C/C++,CMake,测试]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/136

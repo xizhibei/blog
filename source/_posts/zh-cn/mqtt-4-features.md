@@ -1,5 +1,6 @@
 ---
 title: 【MQTT 系列】（四）v3.1.1 特性
+categories: [MQTT]
 tags: [MQTT, Golang]
 date: 2024-05-02 20:44:51
 ---

@@ -1,5 +1,6 @@
 ---
 title: (MQTT Series) Part 4 - v3.1.1 Features
+categories: [MQTT]
 tags: [MQTT, Golang]
 date: 2024-05-02 20:44:51
 lang: en

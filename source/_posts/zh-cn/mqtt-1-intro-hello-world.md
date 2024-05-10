@@ -1,6 +1,7 @@
 ---
 title: 【MQTT系列】（一）简介之 Hello World
 date: 2021-08-29 23:43:27
+categories: [MQTT]
 tags: [MQTT]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/179

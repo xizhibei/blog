@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（八）交叉编译
 date: 2020-06-15 19:52:56
+categories: [CMake]
 tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/141

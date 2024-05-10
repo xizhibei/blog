@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（十）编译速度以及程序性能优化相关
 date: 2020-07-29 17:31:23
+categories: [CMake]
 tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/145

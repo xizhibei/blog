@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（三）ExternalProject 实践
 date: 2020-03-23 23:22:44
+categories: [CMake]
 tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/135

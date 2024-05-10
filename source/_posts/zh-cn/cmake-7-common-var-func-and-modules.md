@@ -1,6 +1,7 @@
 ---
 title: 【CMake 系列】（七）常用变量、函数以及模块
 date: 2020-06-02 18:52:11
+categories: [CMake]
 tags: [C/C++,CMake]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/140

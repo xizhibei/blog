@@ -1,6 +1,7 @@
 ---
 title: (MQTT Series) Part 2 - Setting Up a Broker
 date: 2021-10-31 20:17:30
+categories: [MQTT]
 tags: [DevOps, MQTT]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/180

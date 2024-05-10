@@ -1,6 +1,7 @@
 ---
 title: (MQTT Series) Part 1 - Introduction Hello World
 date: 2021-08-29 23:43:27
+categories: [MQTT]
 tags: [MQTT]
 author: xizhibei
 lang: en
