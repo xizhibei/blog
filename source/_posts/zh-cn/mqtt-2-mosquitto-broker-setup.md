@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/180
 ---
 <!-- en_title: mqtt-2-mosquitto-broker-setup -->
+<!-- toc -->
 
 又停更了，两个月。 🙈 
 
