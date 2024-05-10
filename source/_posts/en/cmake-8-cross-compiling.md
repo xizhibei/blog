@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/141
 ---
 <!-- en_title: cmake-8-cross-compiling -->
+<!-- toc -->
 
 Today, let's talk about a slightly more challenging aspect of CMake: cross-compiling.
 

@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/139
 ---
 <!-- en_title: cmake-6-docs-with-doxygen-sphinx-breathe -->
+<!-- toc -->
 
 Today, let's talk about another perhaps less exciting aspect of CMake: documentation.
 

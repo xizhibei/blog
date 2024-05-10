@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/137
 ---
 <!-- en_title: cmake-5-install-package-and-export -->
+<!-- toc -->
 
 ### Introduction
 

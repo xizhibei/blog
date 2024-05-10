@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/145
 ---
 <!-- en_title: cmake-10-refine-compile-speed-and-program-performance -->
+<!-- toc -->
 
 Every C/C++ developer knows that as projects grow, compilation speed can start to drag, a love-hate situation: it tests our patience and drives us crazy when we're eager to modify code, yet it provides a perfect excuse for a break to walk or sip some tea when we need a pause.
 

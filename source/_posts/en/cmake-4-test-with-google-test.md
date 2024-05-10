@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/136
 ---
 <!-- en_title: cmake-4-test-with-google-test -->
+<!-- toc -->
 
 Today, let's talk about testing with CMake.
 

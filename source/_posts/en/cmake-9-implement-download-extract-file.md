@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/142
 ---
 <!-- en_title: cmake-9-implement-download-extract-file -->
+<!-- toc -->
 
 Today, I'll address a topic I previously mentioned in [ExternalProject Practices](/en/2020/03/23/cmake-3-external-project-practise/): how to download third-party dependencies.
 

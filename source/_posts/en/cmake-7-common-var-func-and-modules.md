@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/140
 ---
 <!-- en_title: cmake-7-common-var-func-and-modules -->
+<!-- toc -->
 
 After using CMake for quite some time, I have recorded a lot of knowledge in my notebook. Actually, this knowledge should have been introduced at the beginning of this series, as it includes some fundamental aspects. Here, I will provide a brief summary.
 

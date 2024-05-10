@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/133
 ---
 <!-- en_title: cmake-1-introduction -->
+<!-- toc -->
 
 Since the last time I picked up C++ in [Why the Order of C++ Static Libraries Matters](https://github.com/xizhibei/blog/issues/100), I've embarked on a point of no return.
 

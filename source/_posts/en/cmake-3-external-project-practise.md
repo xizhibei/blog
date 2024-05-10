@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/135
 ---
 <!-- en_title: cmake-3-external-project-practice -->
+<!-- toc -->
 
 Last time we talked about [Third-Party Dependency Management](/en/2020/03/15/cmake-2-third-party-dependances-management/) and mentioned our team's use of `ExternalProject` to manage dependencies. This time, let's discuss the practical implementation and an open-source dependency management tool based on CMake, [vcpkg](https://github.com/microsoft/vcpkg).
 

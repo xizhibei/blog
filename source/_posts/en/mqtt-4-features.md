@@ -6,6 +6,8 @@ date: 2024-05-02 20:44:51
 lang: en
 ---
 
+<!-- toc -->
+
 In [our last article](/en/2021/12/11/mqtt-3-sub-pub-and-topics/) (which feels like ages ago :P), we discussed MQTT's publish-subscribe functionality. This time, let's go straight into its features.
 
 <!-- more -->

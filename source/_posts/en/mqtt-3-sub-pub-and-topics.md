@@ -7,6 +7,7 @@ author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/181
 ---
 <!-- en_title: mqtt-3-sub-pub-and-topics --->
+<!-- toc -->
 
 Following up on the last introduction (this blogger really drags out the updates :P), let's discuss some basic concepts of MQTT.
 
