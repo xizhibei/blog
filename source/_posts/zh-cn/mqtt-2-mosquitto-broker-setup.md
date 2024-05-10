@@ -21,21 +21,29 @@ Mosquitto 可谓是开源届最有名气的 MQTT Broker 了，只是功能上勉
 
 听默认的 1883 非加密端口：
 
+```
     listener 1883 0.0.0.0
+```
 
 如果不想配置用户密码登录，这里就可以配置允许匿名连接，也就是没有用户密码：
 
+```
     allow_anonymous true
+```
 
 但如果配置了不允许匿名，那么需要配置用户名密码。这个文件里面的用户密码可以用 mosquitto 提供的工具来配置：`mosquitto_passwd mosquitto/config/pwfile username`，然后按照提示输入密码即可。
 
 然后，我们还需要在配置文件中加入这么一行：
 
+```
     password_file /mosquitto/config/pwfile
+```
 
 另外，如果需要对每个用户进行权限限制，则需要配置 acl：
 
+```
     acl_file /mosquitto/config/aclfile
+```
 
 这个配置也很简单，它支持三种语法：
 
@@ -47,14 +55,18 @@ Mosquitto 可谓是开源届最有名气的 MQTT Broker 了，只是功能上勉
 
 允许匿名用户读取所有用户级别的 topic：
 
+```
     topic read #
     topic read $SYS/broker/messages/#
+```
 
 允许用户 web 读取所有 topic
 
+```
     user web
     topic read #
     topic read $SYS/#
+```
 
 显然，这种权限只能满足最低级别的要求，如果需要跟你们的平台整合起来，实现动态登录认证，则需要用到 auth_plugin，目前看到官方推荐的一个插件是 [mosquitto-go-auth](https://github.com/iegomez/mosquitto-go-auth) 。
 
@@ -72,16 +84,20 @@ mosquitto 本身并不支持集群部署，但是可以通过后端来实现，�
 
 如果你用经过权威 CA 签名颁发的证书，那就简单配置如下即可：
 
+```
     listener 8883 0.0.0.0
     certfile /path/to/certs/example.com.cer
     keyfile /path/to/certs/example.com.key
+```
 
 但如果要用自己签发的证书，客户端连接的时候就会稍稍复杂些，需要配置好 ca 才能连接。
 
 另外，跟 [HTTPS 双向认证](https://github.com/xizhibei/blog/issues/159) 一样，MQTT 也可以采用双向认证，这种情况下，当客户端连接的时候，服务器便会要求客户端提供证书，并且用你配置的 ca 证书来验证客户端证书的签名。
 
+```
     cafile /path/to/certs/ca.pem
     require_certificate true
+```
 
 ##### 测试
 
