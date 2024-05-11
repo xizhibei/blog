@@ -105,16 +105,14 @@ Next is publishing and subscribing, below is a very simple example:
 	   os.Exit(1)
     }
 }
-```
 
-```go
 {
     token := c.Publish("testtopic/123", 0, false, "Hello world")
     token.Wait()
 }
-```
 
 time.Sleep(10 * time.Second)
+```
 
 
 Alternatively, you can also try linking publishing and subscribing as mentioned in the first article, such as sending data on the program and receiving on the desktop client, and vice versa.
