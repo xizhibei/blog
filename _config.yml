@@ -111,3 +111,9 @@ theme_config:
     btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
     btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
     paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+
+  # mermaid chart
+  mermaid: ## mermaid url https://github.com/knsv/mermaid
+    enable: true
+    version: 10.9.1
+    options: {}
