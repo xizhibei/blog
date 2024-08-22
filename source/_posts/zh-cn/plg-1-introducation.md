@@ -1,8 +1,8 @@
 ---
-title: 【PLG 系列】（一）入门
+title: 【PLG 系列】（一）Loki 生态系统入门指南
 date: 2024-07-08 21:09:15
-categories: [程序可观测性]
-tags: [PLG,监控,Loki,Promtail,Grafana,日志工具]
+categories: [可观测性工程]
+tags: [PLG Stack,可观测性,Loki,Promtail,Grafana,日志工具]
 author: xizhibei
 ---
 
@@ -39,9 +39,9 @@ author: xizhibei
 * **故障排除**：快速定位问题源头，减少故障排除时间。
 * **性能优化**：分析日志数据，发现潜在的性能瓶颈和优化机会。
 
-### 三个组件
+### PLG 生态系统剖析
 
-#### Loki
+#### Loki：高效轻量的日志聚合引擎
 
 Loki 是一个水平可扩展的日志聚合系统，旨在与 Prometheus 结合使用，以提供完整的监控解决方案。Loki 采用了 Prometheus 的标签查询语言（PromQL）和 Grafana 的查询构建器，可以轻松地查询和可视化日志数据。
 
@@ -49,11 +49,11 @@ Loki 是一个水平可扩展的日志聚合系统，旨在与 Prometheus 结合
 
 与传统的日志管理系统相比，Loki 具有更低的资源消耗和更高的性能，适用于大规模的日志数据收集和分析。它支持日志数据的分片存储和压缩，以优化存储空间和查询性能。
 
-#### Promtail
+#### Promtail：智能日志采集代理
 
 [Promtail](https://grafana.com/docs/loki/latest/send-data/promtail/) 是日志采集终端，与之搭配的还有 [Docker driver client](https://grafana.com/docs/loki/latest/send-data/docker-driver/)。它们的作用是在每台需要采集日志的机器中，收集、处理并发送本地日志到 Loki。
 
-#### Grafana
+#### Grafana：强大而灵活的可视化平台
 
 Grafana 不用多作介绍，它是一个强大的可视化工具，被绝大多数 IT 公司使用。通过 Grafana，用户可以创建丰富的可视化仪表板，实现对日志、指标等数据的全面监控和分析。Grafana 强大的插件系统和灵活的查询语言，使其成为日志管理、性能监控和故障排除的理想工具。
 
@@ -67,7 +67,7 @@ Grafana 不用多作介绍，它是一个强大的可视化工具，被绝大多
 
 介绍完这三个组件后，我们来实际测试体验一下：
 
-### 安装
+### PLG 栈快速部署指南
 
 这里我直接照搬了官网的例子，安装方法已经提供在 Loki 代码库中，有一个可供测试的例子：[Getting Started](https://github.com/grafana/loki/tree/0ee2a6126ae40a1d666f500c19efd639763f1bae/examples/getting-started)。这个简单的例子甚至使用了读写分离，展示了 Loki 的拓展性。
 
