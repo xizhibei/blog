@@ -108,7 +108,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          environment: production
           command: |
             pages project list
             pages deploy public --project-name=${{ secrets.CF_PROJECT_NAME }} --branch=master
