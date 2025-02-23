@@ -6,3 +6,8 @@ node_modules/
 public/
 .deploy*/
 package-lock.json
+.stignore
+.cursor
+.cursorrules
+.stfolder
+.vscode
