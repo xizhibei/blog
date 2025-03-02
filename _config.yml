@@ -72,7 +72,7 @@ theme: maupassant
 theme_config:
   links:
   timeline:
-  google_analytics: G-LHXP51259L
+  google_analytics:
   shareto: true
   wordcount: true
   disqus:
