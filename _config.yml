@@ -100,7 +100,7 @@ theme_config:
     - recent_posts
     - recent_comments
   info:
-    # avatar: /img/avatar.png
+    avatar: /media/misc/avatar.png
     discription: To be a better man.
     outlinkitem:
   donate:
