@@ -9,5 +9,6 @@ package-lock.json
 .stignore
 .cursor
 .cursorrules
+.cursorignore
 .stfolder
 .vscode
