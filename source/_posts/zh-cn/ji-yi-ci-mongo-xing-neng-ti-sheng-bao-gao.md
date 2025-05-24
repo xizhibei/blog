@@ -2,6 +2,7 @@
 title: 记一次 mongo 性能提升报告
 date: 2016-04-21 23:46:48
 tags: [MongoDB,Node.js, 数据库]
+categories: [数据库,MongoDB]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/5
 ---

@@ -2,6 +2,7 @@
 title: 一个 MongoDB 批量更新的提示
 date: 2018-07-01 22:45:41
 tags: [MongoDB,数据库,监控,重构]
+categories: [数据库,MongoDB]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/81
 ---

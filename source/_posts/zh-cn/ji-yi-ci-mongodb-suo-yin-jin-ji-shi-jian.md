@@ -2,6 +2,7 @@
 title: 记一次 mongodb 索引紧急事件
 date: 2016-05-28 22:08:25
 tags: [MongoDB, 数据库]
+categories: [数据库,MongoDB]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/17
 ---

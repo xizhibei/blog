@@ -2,6 +2,7 @@
 title: 记一次 Mongo 连接配置调优
 date: 2016-04-14 17:56:52
 tags: [MongoDB,Node.js, 数据库]
+categories: [数据库,MongoDB]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/2
 ---

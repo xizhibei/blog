@@ -2,6 +2,7 @@
 title: MongoDB 的复制集
 date: 2019-05-05 20:56:13
 tags: [Golang,MongoDB,Prometheus,数据库,架构]
+categories: [数据库,MongoDB]
 author: xizhibei
 issue_link: https://github.com/xizhibei/blog/issues/105
 ---
