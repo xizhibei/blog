@@ -74,6 +74,10 @@ markdown:
     quotes: '“”‘’'
   plugins:
     - markdown-it-footnote
+  images:
+    lazyload: false
+    prepend_root: true
+    post_asset: false
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
