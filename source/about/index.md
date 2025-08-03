@@ -34,6 +34,7 @@ title: 关于我
 
 #### Node.js
 
+- [1mcp](https://github.com/1mcp-app/agent): 这是一个统一模型上下文协议（Model Context Protocol）的服务器实现，将多个 MCP 服务器聚合到一个服务器中。
 - [gRPC helper](https://github.com/xizhibei/grpc-helper): 这是对 grpc-node 的扩展，增加了 Promise 支持及 async/await 语法，特性包括负载均衡和基于DNS的服务发现，优化了gRPC的可扩展性，使其更适合微服务架构的集成。；
 - [Blackfyre](https://github.com/xizhibei/blackfyre): 这是一个构建在 RabbitMQ 上的分布式任务队列系统，专门用于管理任务的重试、延迟及监控，从而增强分布式系统中队列管理的健壮性和可靠性。
 - [Getui rest sdk](https://github.com/xizhibei/getui-rest-sdk): 这是对个推 SDK 的简化封装，提供了更易用和开发者友好的API，简化了将个推的推送通知服务集成到应用程序的过程。
@@ -80,6 +81,7 @@ The blog is built with Hexo, and its source code is available on GitHub. Feel fr
 
 #### Node.js
 
+- [1mcp](https://github.com/1mcp-app/agent): A unified Model Context Protocol server implementation that aggregates multiple MCP servers into one.
 - [gRPC helper](https://github.com/xizhibei/grpc-helper): An enhancement of grpc-node that incorporates support for Promises and async/await syntax. Features include load balancing and DNS-based service discovery, optimizing gRPC for better scalability and easier integration in microservices architectures.
 - [Blackfyre](https://github.com/xizhibei/blackfyre): A distributed task queue built on RabbitMQ, designed to handle task retries, delays, and monitoring. This project improves the robustness and reliability of queue management in distributed systems.
 - [Getui rest sdk](https://github.com/xizhibei/getui-rest-sdk): A straightforward wrapper for the GeTui SDK, simplifying the integration of GeTui's push notification services into applications by providing a more accessible and developer-friendly API.
