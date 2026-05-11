@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       hexo:
-        specifier: ^7.3.0
-        version: 7.3.0(chokidar@3.6.0)
+        specifier: ^8.1.2
+        version: 8.1.2(chokidar@3.6.0)
       hexo-deployer-git:
         specifier: ^4.0.0
         version: 4.0.0(chokidar@3.6.0)
@@ -183,6 +183,10 @@ packages:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
+  abbrev@3.0.1:
+    resolution: {integrity: sha512-AO2ac6pjRB3SJmGJo+v5/aK6Omggp6fsLrs6wN9bd35ulu4cCwaAU9+7ZhXjeqHVkaHThLuzH0nZr0YpCDhygg==}
+    engines: {node: ^18.17.0 || >=20.5.0}
+
   acorn@7.4.1:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
     engines: {node: '>=0.4.0'}
@@ -192,9 +196,9 @@ packages:
     resolution: {integrity: sha512-ewaIr5y+9CUTGFwZfpECUbFlGcC0GCw1oqR9RI6h1gQCd9Aj2GxSckCnPsVJnmfMZbwFYE+leZGASgkWl06Jow==}
     engines: {node: '>=0.10.0'}
 
-  ansi-regex@5.0.1:
-    resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
-    engines: {node: '>=8'}
+  ansi-regex@6.2.2:
+    resolution: {integrity: sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg==}
+    engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
@@ -207,9 +211,6 @@ packages:
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
-
-  archy@1.0.0:
-    resolution: {integrity: sha512-Xg+9RwCg/0p32teKdGMPTPnVXKD0w3DfHnFTficozsAgsvq2XenPJq/MYpzzQ/v8zrOyJn6Ds39VA4JIDwFfqw==}
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -341,10 +342,6 @@ packages:
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
-
-  cuid@2.1.8:
-    resolution: {integrity: sha512-xiEMER6E7TlTPnDxrM4eRiC6TRgjNX9xzEZ5U/Se2YJKr7Mq4pJn/2XEHjl3STcSh96GmkHPcBXLES8M29wyyg==}
-    deprecated: Cuid and other k-sortable and non-cryptographic ids (Ulid, ObjectId, KSUID, all UUIDs) are all insecure. Use @paralleldrive/cuid2 instead.
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -488,8 +485,14 @@ packages:
     resolution: {integrity: sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug==}
     engines: {node: '>=0.10.0'}
 
+  fast-archy@1.0.0:
+    resolution: {integrity: sha512-j8CNf0sCX92BogtUZAMPhMj7p3nv7xxeETwfpVWQNQocC5b21FAa6bUzfuhcNoEa4f2RtDe5U3uY0NriH9nA7g==}
+
   fast-equals@3.0.3:
     resolution: {integrity: sha512-NCe8qxnZFARSHGztGMZOO/PC1qa5MIFB5Hp66WdzbCRAz8U8US3bx1UTgLS49efBQPcUtO9gf5oVEY8o7y/7Kg==}
+
+  fast-text-table@1.0.1:
+    resolution: {integrity: sha512-KUwE3MizTzXwhrvTTEpWbug1ngV1zfjwzdxSkeWYGUoVGaaQoid+jxgg4zm4LB+OrtnD+X2xJFq7DCO3pc3fdQ==}
 
   fast-xml-builder@1.0.0:
     resolution: {integrity: sha512-fpZuDogrAgnyt9oDDz+5DBz0zgPdPZz6D4IR7iESxRXElrlGTRkHJ9eEt+SACRJwT0FNFrt71DFQIUFBJfX/uQ==}
@@ -578,8 +581,8 @@ packages:
     resolution: {integrity: sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==}
     engines: {node: '>= 0.4'}
 
-  hasown@2.0.2:
-    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
+  hasown@2.0.3:
+    resolution: {integrity: sha512-ej4AhfhfL2Q2zpMmLo7U1Uv9+PyhIZpgQLGT1F9miIGmiCJIoCgSmczFdrc97mWT4kVY72KA+WnnhJ5pghSvSg==}
     engines: {node: '>= 0.4'}
 
   hexo-cli@4.3.2:
@@ -605,6 +608,10 @@ packages:
   hexo-fs@4.1.3:
     resolution: {integrity: sha512-Q92zQ5PlVDouvSWFLXQoFSTLIUIODikUJs2BfAXQglyOEjN1dOQn1Z5Nimk/7GHof17R5h/uObCQLnZAjzI2tg==}
     engines: {node: '>=14'}
+
+  hexo-fs@5.0.1:
+    resolution: {integrity: sha512-Zm4m21coQA7TtL9JL0oNZF+ypY/HbqwVdaqGqoKD+GEV7HH2Y1YObNBgl1o/lV1tzStC8f15AoRcHdS2jiWp0w==}
+    engines: {node: '>=18'}
 
   hexo-generator-archive@2.0.0:
     resolution: {integrity: sha512-KikJk7dGFbtNHOgqtLFGf5T/S8n1paGp+Gy0KfVDz+HKYhGbXOouyiZkmc3O9KrYt6ja14rmkMhq7KKGtvfehw==}
@@ -687,9 +694,9 @@ packages:
   hexo-wordcount@6.0.1:
     resolution: {integrity: sha512-tbo2P9xRWEKQmRf7+XuPjx9It1MnaE26nA+EEb2DN39gK1x+26W7Nm4Iyp4AugQjBWYYDx7OLn4gp1WFxQpQew==}
 
-  hexo@7.3.0:
-    resolution: {integrity: sha512-dOe8mzBKrvjubW5oBmyhcnQDpC+M2xmAMLae5K+o+SkHxyvAhShkS2VQZoTsOLIJKY6xilv7dzCjCvE7ol/NHQ==}
-    engines: {node: '>=14'}
+  hexo@8.1.2:
+    resolution: {integrity: sha512-gmpNwL1KnbK12q551ZhGxqvSw8M88ZSjFKOhx6ybUYz1phjPdwGewMgBgwGmjcVcIYFq6tWQAv1MRil/sBrPHQ==}
+    engines: {node: '>=20.19.0'}
     hasBin: true
 
   highlight.js@11.11.1:
@@ -730,8 +737,8 @@ packages:
   is-buffer@1.1.6:
     resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
 
-  is-core-module@2.16.1:
-    resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
+  is-core-module@2.16.2:
+    resolution: {integrity: sha512-evOr8xfXKxE6qSR0hSXL2r3sd7ALj8+7jQEUvPYcm5sgZFdJ+AYzT6yNmJenvIYQBgIGwfwz08sL8zoL7yq2BA==}
     engines: {node: '>= 0.4'}
 
   is-docker@2.2.1:
@@ -933,8 +940,8 @@ packages:
   mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
 
-  micro-memoize@4.1.3:
-    resolution: {integrity: sha512-DzRMi8smUZXT7rCGikRwldEh6eO6qzKiPPopcr1+2EY3AYKpy5fu159PKWwIS9A6IWnrvPKDMcuFtyrroZa8Bw==}
+  micro-memoize@4.2.0:
+    resolution: {integrity: sha512-dRxIsNh0XosO9sd3aASUabKOzG9dloLO41g74XUGThpHBoGm1ttakPT5in14CuW/EDedkniaShFHbymmmKGOQA==}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -972,12 +979,12 @@ packages:
     resolution: {integrity: sha512-WRoDn//mXBiJ1H40rqa3vH0toePwSsGb45iInWlTySa+Uu4k3tYUSxa2v1KqAiLtvlrSzaExqS1gtk96A9zvEA==}
     engines: {node: '>=0.10.0'}
 
-  moize@6.1.6:
-    resolution: {integrity: sha512-vSKdIUO61iCmTqhdoIDrqyrtp87nWZUmBPniNjO0fX49wEYmyDO4lvlnFXiGcaH1JLE/s/9HbiK4LSHsbiUY6Q==}
+  moize@6.1.7:
+    resolution: {integrity: sha512-8/9XgYooMo7/q5tf6zGF4+Wp1jx5sbxV87uK6YvTq9rgDtusLWZCZ8c5C0EhYZbNGudul5EMeMsObO4Ug/gszg==}
     deprecated: This library has been deprecated in favor of micro-memoize, which as-of version 5 incorporates most of the functionality that this library offers at nearly half the size and better speed.
 
-  moment-timezone@0.5.47:
-    resolution: {integrity: sha512-UbNt/JAWS0m/NJOebR0QMRHBk0hu03r5dx9GK8Cs0AS3I81yDcOc9k+DytPItgVvBP7J6Mf6U2n3BPAacAV9oA==}
+  moment-timezone@0.5.48:
+    resolution: {integrity: sha512-f22b8LV1gbTO2ms2j2z13MuPogNoh5UzxL3nzNAYKGraILnbGc9NEE6dyiiiLv46DGRb8A4kg8UKWLjPthxBHw==}
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
@@ -991,6 +998,11 @@ packages:
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+
+  nanoid@3.3.12:
+    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
 
   negotiator@0.6.4:
     resolution: {integrity: sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==}
@@ -1069,8 +1081,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picomatch@2.3.1:
-    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
+  picomatch@2.3.2:
+    resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
   pretty-hrtime@1.0.3:
@@ -1162,8 +1174,8 @@ packages:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
 
-  resolve@1.22.10:
-    resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
+  resolve@1.22.12:
+    resolution: {integrity: sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA==}
     engines: {node: '>= 0.4'}
     hasBin: true
 
@@ -1239,9 +1251,9 @@ packages:
   string_decoder@1.3.0:
     resolution: {integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==}
 
-  strip-ansi@6.0.1:
-    resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
-    engines: {node: '>=8'}
+  strip-ansi@7.2.0:
+    resolution: {integrity: sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==}
+    engines: {node: '>=12'}
 
   strip-color@0.1.0:
     resolution: {integrity: sha512-p9LsUieSjWNNAxVCXLeilaDlmuUOrDS5/dF9znM1nZc7EGX5+zEFC0bEevsNIaldjlks+2jns5Siz6F9iK6jwA==}
@@ -1265,9 +1277,6 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-
-  text-table@0.2.0:
-    resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
 
   through2@2.0.5:
     resolution: {integrity: sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==}
@@ -1332,9 +1341,9 @@ packages:
     resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
     engines: {node: '>=0.10.0'}
 
-  warehouse@5.0.1:
-    resolution: {integrity: sha512-5BQEQP56bPY+cqocTho4syazuGgSoyKd0y3PsS2j8tGN10HH+CEfJSIY+KUw9D0k4jaVEFMXLz0KqCiUzTYb8A==}
-    engines: {node: '>=14'}
+  warehouse@6.0.0:
+    resolution: {integrity: sha512-eOlhyPp5HC951QVDgAeculpSxvfum4UZAbqXSzocqbdiziTseFJFYxmhsKqrQ3wrwgtzPGgkVN2rPL31YLQ0SA==}
+    engines: {node: '>=18'}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -1434,13 +1443,15 @@ snapshots:
 
   abbrev@2.0.0: {}
 
+  abbrev@3.0.1: {}
+
   acorn@7.4.1: {}
 
   ansi-red@0.1.1:
     dependencies:
       ansi-wrap: 0.1.0
 
-  ansi-regex@5.0.1: {}
+  ansi-regex@6.2.2: {}
 
   ansi-styles@4.3.0:
     dependencies:
@@ -1451,9 +1462,7 @@ snapshots:
   anymatch@3.1.3:
     dependencies:
       normalize-path: 3.0.0
-      picomatch: 2.3.1
-
-  archy@1.0.0: {}
+      picomatch: 2.3.2
 
   argparse@1.0.10:
     dependencies:
@@ -1605,8 +1614,6 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cuid@2.1.8: {}
-
   debug@2.6.9:
     dependencies:
       ms: 2.0.0
@@ -1716,7 +1723,11 @@ snapshots:
     dependencies:
       is-extendable: 0.1.1
 
+  fast-archy@1.0.0: {}
+
   fast-equals@3.0.3: {}
+
+  fast-text-table@1.0.1: {}
 
   fast-xml-builder@1.0.0: {}
 
@@ -1779,7 +1790,7 @@ snapshots:
       get-proto: 1.0.1
       gopd: 1.2.0
       has-symbols: 1.1.0
-      hasown: 2.0.2
+      hasown: 2.0.3
       math-intrinsics: 1.1.0
 
   get-proto@1.0.1:
@@ -1826,7 +1837,7 @@ snapshots:
     dependencies:
       has-symbols: 1.1.0
 
-  hasown@2.0.2:
+  hasown@2.0.3:
     dependencies:
       function-bind: 1.1.2
 
@@ -1840,7 +1851,7 @@ snapshots:
       hexo-util: 3.3.0
       minimist: 1.2.8
       picocolors: 1.1.1
-      resolve: 1.22.10
+      resolve: 1.22.12
       tildify: 2.0.0
 
   hexo-deployer-git@4.0.0(chokidar@3.6.0):
@@ -1868,6 +1879,13 @@ snapshots:
     dependencies:
       bluebird: 3.7.2
       chokidar: 3.6.0
+      graceful-fs: 4.2.11
+      hexo-util: 3.3.0
+
+  hexo-fs@5.0.1:
+    dependencies:
+      bluebird: 3.7.2
+      chokidar: 4.0.3
       graceful-fs: 4.2.11
       hexo-util: 3.3.0
 
@@ -1996,32 +2014,31 @@ snapshots:
 
   hexo-wordcount@6.0.1: {}
 
-  hexo@7.3.0(chokidar@3.6.0):
+  hexo@8.1.2(chokidar@3.6.0):
     dependencies:
-      abbrev: 2.0.0
-      archy: 1.0.0
+      abbrev: 3.0.1
       bluebird: 3.7.2
+      fast-archy: 1.0.0
+      fast-text-table: 1.0.1
       hexo-cli: 4.3.2
       hexo-front-matter: 4.2.1
-      hexo-fs: 4.1.3
+      hexo-fs: 5.0.1
       hexo-i18n: 2.0.0
       hexo-log: 4.1.0
-      hexo-util: 3.3.0
+      hexo-util: 4.0.0
       js-yaml: 4.1.1
       js-yaml-js-types: 1.0.1(js-yaml@4.1.1)
       micromatch: 4.0.8
-      moize: 6.1.6
+      moize: 6.1.7
       moment: 2.30.1
-      moment-timezone: 0.5.47
+      moment-timezone: 0.5.48
       nunjucks: 3.2.4(chokidar@3.6.0)
       picocolors: 1.1.1
       pretty-hrtime: 1.0.3
-      resolve: 1.22.10
-      strip-ansi: 6.0.1
-      text-table: 0.2.0
+      strip-ansi: 7.2.0
       tildify: 2.0.0
       titlecase: 1.1.3
-      warehouse: 5.0.1
+      warehouse: 6.0.0
     transitivePeerDependencies:
       - chokidar
 
@@ -2073,9 +2090,9 @@ snapshots:
 
   is-buffer@1.1.6: {}
 
-  is-core-module@2.16.1:
+  is-core-module@2.16.2:
     dependencies:
-      hasown: 2.0.2
+      hasown: 2.0.3
 
   is-docker@2.2.1: {}
 
@@ -2119,7 +2136,7 @@ snapshots:
       call-bound: 1.0.4
       gopd: 1.2.0
       has-tostringtag: 1.0.2
-      hasown: 2.0.2
+      hasown: 2.0.3
 
   is-wsl@2.2.0:
     dependencies:
@@ -2262,12 +2279,12 @@ snapshots:
 
   mdurl@1.0.1: {}
 
-  micro-memoize@4.1.3: {}
+  micro-memoize@4.2.0: {}
 
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
-      picomatch: 2.3.1
+      picomatch: 2.3.2
 
   mime-db@1.53.0: {}
 
@@ -2292,12 +2309,12 @@ snapshots:
       for-in: 1.0.2
       is-extendable: 1.0.1
 
-  moize@6.1.6:
+  moize@6.1.7:
     dependencies:
       fast-equals: 3.0.3
-      micro-memoize: 4.1.3
+      micro-memoize: 4.2.0
 
-  moment-timezone@0.5.47:
+  moment-timezone@0.5.48:
     dependencies:
       moment: 2.30.1
 
@@ -2316,6 +2333,8 @@ snapshots:
   ms@2.0.0: {}
 
   ms@2.1.3: {}
+
+  nanoid@3.3.12: {}
 
   negotiator@0.6.4: {}
 
@@ -2382,7 +2401,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picomatch@2.3.1: {}
+  picomatch@2.3.2: {}
 
   pretty-hrtime@1.0.3: {}
 
@@ -2419,7 +2438,7 @@ snapshots:
       jstransformer: 1.0.0
       pug-error: 2.1.0
       pug-walk: 2.0.0
-      resolve: 1.22.10
+      resolve: 1.22.12
 
   pug-lexer@5.0.1:
     dependencies:
@@ -2489,7 +2508,7 @@ snapshots:
 
   readdirp@3.6.0:
     dependencies:
-      picomatch: 2.3.1
+      picomatch: 2.3.2
 
   readdirp@4.1.2: {}
 
@@ -2502,9 +2521,10 @@ snapshots:
 
   repeat-string@1.6.1: {}
 
-  resolve@1.22.10:
+  resolve@1.22.12:
     dependencies:
-      is-core-module: 2.16.1
+      es-errors: 1.3.0
+      is-core-module: 2.16.2
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -2585,9 +2605,9 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  strip-ansi@6.0.1:
+  strip-ansi@7.2.0:
     dependencies:
-      ansi-regex: 5.0.1
+      ansi-regex: 6.2.2
 
   strip-color@0.1.0: {}
 
@@ -2612,8 +2632,6 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
-
-  text-table@0.2.0: {}
 
   through2@2.0.5:
     dependencies:
@@ -2660,14 +2678,14 @@ snapshots:
 
   void-elements@3.1.0: {}
 
-  warehouse@5.0.1:
+  warehouse@6.0.0:
     dependencies:
       bluebird: 3.7.2
-      cuid: 2.1.8
       graceful-fs: 4.2.11
       hexo-log: 4.1.0
       is-plain-object: 5.0.0
       jsonparse: 1.3.1
+      nanoid: 3.3.12
       rfdc: 1.4.1
       through2: 4.0.2
 
